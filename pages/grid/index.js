@@ -1,6 +1,6 @@
 import { Component } from "react";
-import Grid from "./Grid";
-import Nav from "../../components/nav";
+import Grid from "~/components/Grid";
+import Nav from "~/components/nav";
 
 class Page extends Component {
 	render() {
@@ -47,14 +47,8 @@ class Page extends Component {
 						},
 					]}
 				/>
-				<Grid
-					columns="7"
-					elements={["7", "7", "7", "7", "7", "7", "7"]}
-				/>
-				<Grid
-					columns="8"
-					elements={["8", "8", "8", "8", "8", "8", "8", "8"]}
-				/>
+				<Grid columns="7" elements={["7", "7", "7", "7", "7", "7", "7"]} />
+				<Grid columns="8" elements={["8", "8", "8", "8", "8", "8", "8", "8"]} />
 				<Grid
 					columns="9"
 					elements={["9", "9", "9", "9", "9", "9", "9", "9", "9"]}
@@ -129,11 +123,7 @@ class Page extends Component {
 					]}
 				/>
 
-				<Grid
-					columns="4"
-					gutters="40"
-					elements={["1", "2", "3", "4"]}
-				/>
+				<Grid columns="4" gutters="40" elements={["1", "2", "3", "4"]} />
 				<Grid columns="2" gutters="60" elements={["1", "2"]} />
 				<Grid
 					columns="7"
@@ -145,18 +135,7 @@ class Page extends Component {
 				<Grid
 					columns="10"
 					gutters="30"
-					elements={[
-						"1",
-						"2",
-						"3",
-						"4",
-						"5",
-						"6",
-						"7",
-						"8",
-						"9",
-						"10",
-					]}
+					elements={["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]}
 				/>
 				<style jsx>{`
 					:global(body) {

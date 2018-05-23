@@ -6,4 +6,9 @@ module.exports = withCSS({
 		importLoaders: 1,
 		localIdentName: "[local]___[hash:base64:5]",
 	},
+	webpack(config, options) {
+		config.resolve.alias["~"] = config.context;
+
+		return config;
+	},
 });

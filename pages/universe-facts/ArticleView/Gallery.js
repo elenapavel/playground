@@ -1,5 +1,5 @@
-import $ from "./style.css";
 import Item from "./Item";
+import $ from "./style.css";
 
 const Gallery = ({ items }) => (
 	<div className={$.gallery_container}>

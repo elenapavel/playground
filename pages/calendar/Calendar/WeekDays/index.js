@@ -27,9 +27,7 @@ class WeekDays extends Component {
 						? weekDaysNamesSmall
 						: weekDaysNamesXSmall,
 		});
-		document.defaultView.addEventListener("resize", () =>
-			this.setWeekDaysName()
-		);
+		window.addEventListener("resize", () => this.setWeekDaysName());
 	}
 	setWeekDaysName() {
 		this.setState({

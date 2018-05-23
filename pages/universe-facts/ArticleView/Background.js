@@ -1,6 +1,6 @@
 import { PureComponent } from "react";
-import { module } from "../application";
 import { Transition, config } from "react-spring";
+import { module } from "../application";
 import $ from "./style.css";
 
 class Background extends PureComponent {
@@ -16,7 +16,7 @@ class Background extends PureComponent {
 						? 100 - 64000 / window.innerWidth + "%"
 						: "100%",
 		});
-		document.defaultView.addEventListener("resize", () => {
+		window.addEventListener("resize", () => {
 			this.calcBackgroundWidth();
 		});
 	}
@@ -54,9 +54,7 @@ class Background extends PureComponent {
 						<div
 							className={$.background_container}
 							style={{
-								width: `${
-									view == "article" ? styles.width : "0%"
-								}`,
+								width: `${view == "article" ? styles.width : "0%"}`,
 								backgroundImage: `url(${backgroundImage})`,
 							}}
 						/>
