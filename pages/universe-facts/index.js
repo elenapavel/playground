@@ -8,7 +8,7 @@ export default () => (
 		<Head>
 			<link
 				rel="stylesheet"
-				href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+				href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
 			/>
 			<link
 				href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,900"

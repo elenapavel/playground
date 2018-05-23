@@ -6,7 +6,7 @@ export default {
 			authors: ["Bill Alberts", "Tom Tullis"],
 			ratings: "4.5",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [0, 1],
@@ -16,7 +16,7 @@ export default {
 			authors: ["Bill Alberts", "Tom Tullis"],
 			ratings: "4.0",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [1, 2],
@@ -26,7 +26,7 @@ export default {
 			authors: ["Don Norman"],
 			ratings: "5.0",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content: "D. Norman reveals how smart design is the new frontier.",
 			categories: [0, 2],
 		},
@@ -35,7 +35,7 @@ export default {
 			authors: ["Don Norman"],
 			ratings: "5.0",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content: "D. Norman reveals how smart design is the new frontier.",
 			categories: [0, 1, 2, 3],
 		},
@@ -44,7 +44,7 @@ export default {
 			authors: ["Margaret Heffernan"],
 			ratings: "4.5",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [1, 3],
@@ -54,7 +54,7 @@ export default {
 			authors: ["Bill Alberts", "Tom Tullis"],
 			ratings: "4.5",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [1, 2, 3],
@@ -64,7 +64,7 @@ export default {
 			authors: ["Bill Alberts", "Tom Tullis"],
 			ratings: "4.5",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [0, 1],
@@ -74,7 +74,7 @@ export default {
 			authors: ["Bill Alberts", "Tom Tullis"],
 			ratings: "4.0",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [1, 2],
@@ -84,7 +84,7 @@ export default {
 			authors: ["Don Norman"],
 			ratings: "5.0",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content: "D. Norman reveals how smart design is the new frontier.",
 			categories: [0, 2],
 		},
@@ -93,7 +93,7 @@ export default {
 			authors: ["Don Norman"],
 			ratings: "5.0",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content: "D. Norman reveals how smart design is the new frontier.",
 			categories: [0, 1, 2, 3],
 		},
@@ -102,7 +102,7 @@ export default {
 			authors: ["Margaret Heffernan"],
 			ratings: "4.5",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [1, 3],
@@ -112,7 +112,7 @@ export default {
 			authors: ["Bill Alberts", "Tom Tullis"],
 			ratings: "4.5",
 			bookImage:
-				"http://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
+				"https://sm.ign.com/ign_ro/screenshot/default/ready-player-one_z9as.jpg",
 			content:
 				"First businesses discoverd quality as a key competitive edge; next came science.",
 			categories: [1, 2, 3],

@@ -35,11 +35,7 @@ class Page extends Component {
 					<Content
 						article={articles[selectedArticleIndex]}
 						lastArticle={lastArticle}
-						lastIndex={
-							lastSelectedArticleIndex
-								? lastSelectedArticleIndex
-								: 0
-						}
+						lastIndex={lastSelectedArticleIndex ? lastSelectedArticleIndex : 0}
 						currentIndex={selectedArticleIndex}
 						total={articles.length}
 					/>

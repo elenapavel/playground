@@ -45,9 +45,7 @@ class BookCard extends Component {
 							className="title"
 							onClick={e =>
 								this.setCardState(
-									state == "expanded"
-										? "collpased"
-										: "expanded"
+									state == "expanded" ? "collpased" : "expanded"
 								)
 							}
 						>
@@ -121,7 +119,6 @@ class BookCard extends Component {
 					.book_image {
 						flex-basis: 0%;
 						width: 50%;
-						overflow: hidden;
 						transition: flex-basis 0.5s ease-in-out 0.5s;
 						padding: 0;
 						margin-top: -5rem;
