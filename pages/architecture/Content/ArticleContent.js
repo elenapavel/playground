@@ -29,7 +29,7 @@ class ArticleContent extends Component {
 				>
 					{styles => (
 						<animated.div style={styles}>
-							<div className={$.title}>{title}</div>
+							<div className={$.content_title}>{title}</div>
 						</animated.div>
 					)}
 				</Spring>

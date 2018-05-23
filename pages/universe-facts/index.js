@@ -1,10 +1,13 @@
 import Head from "next/head";
+
 import Application from "./application";
 import CategoryView from "./CategoryView";
 import ArticleView from "./ArticleView";
 
+import $ from "./style.css";
+
 export default () => (
-	<div>
+	<div className={$.application}>
 		<Head>
 			<link
 				rel="stylesheet"
