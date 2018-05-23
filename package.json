@@ -5,10 +5,12 @@
 	"license": "private",
 	"scripts": {
 		"dev": "next",
+		"start": "next start",
 		"build": "next build",
 		"export":
-			"next build && next export -o docs && echo '  ' > docs/.nojekyll",
-		"start": "next start"
+			"yarn clearcache && next build && next export -o public && touch public/.nojekyll",
+		"deploy": "git subtree push --prefix public origin gh-pages",
+		"clearcache": "rm -rf node_modules/.cache"
 	},
 	"dependencies": {
 		"date-fns": "^1.29.0",

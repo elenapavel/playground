@@ -1,5 +1,6 @@
 const withCSS = require("@zeit/next-css");
 const isProduction = process.env.NODE_ENV === "production";
+const publicURL = isProduction ? "https://elenapavel.github.io/playground" : "";
 
 module.exports = withCSS({
 	cssModules: true,
@@ -7,7 +8,7 @@ module.exports = withCSS({
 		importLoaders: 1,
 		localIdentName: "[local]_[hash:base64:5]",
 	},
-	assetPrefix: isProduction ? "https://elenapavel.github.io/playground" : "",
+	assetPrefix: publicURL,
 	exportPathMap: () => ({
 		"/": { page: "/" },
 		"/architecture": { page: "/architecture" },
@@ -18,6 +19,7 @@ module.exports = withCSS({
 	}),
 	webpack(config, options) {
 		config.resolve.alias["~"] = config.context;
+		config.output.publicPath = publicURL;
 
 		return config;
 	},
