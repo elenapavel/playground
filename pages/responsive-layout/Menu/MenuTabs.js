@@ -25,7 +25,7 @@ class MenuTabs extends Component {
 						min-width: 7rem;
 						flex-basis: 10%;
 						margin: 0.5rem;
-						background: grey;
+						background: beige;
 					}
 				`}</style>
 			</div>

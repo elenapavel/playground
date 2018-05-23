@@ -1,9 +1,13 @@
 import { Component } from "react";
+
+import { Transition, config, animated } from "react-spring";
+import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
 import ArticleContent from "./ArticleContent";
 import ArticleImage from "./ArticleImage";
 import Progress from "./Progress";
-import { Transition, config, animated } from "react-spring";
-import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
+import $ from "./style.css";
 
 class Content extends Component {
 	render() {
@@ -41,8 +45,8 @@ class Content extends Component {
 							width: "100%",
 						}}
 					>
-						<div className="container">
-							<div className="to_left">
+						<div className={$.container}>
+							<div className={$.to_left}>
 								<ArticleContent
 									title={article.title}
 									date={article.date}
@@ -57,7 +61,7 @@ class Content extends Component {
 								/>
 								<Progress index={currentIndex} total={total} />
 							</div>
-							<div className="to_right">
+							<div className={$.to_right}>
 								<ArticleImage
 									image={article.image}
 									extras={article.extras}
@@ -65,30 +69,6 @@ class Content extends Component {
 									lastExtras={lastArticle.extras}
 								/>
 							</div>
-							<style jsx>{`
-								.container {
-									position: relative;
-									display: flex;
-									flex-wrap: wrap;
-								}
-								.to_left {
-									flex-basis: 100%;
-									transition: flex-basis 0.5s ease-in-out;
-								}
-								.to_right {
-									flex-basis: 100%;
-									transition: flex-basis 0.5s ease-in-out;
-									overflow: hidden;
-								}
-								@media (min-width: 64rem) {
-									.to_left {
-										flex-basis: 50%;
-									}
-									.to_right {
-										flex-basis: 50%;
-									}
-								}
-							`}</style>
 						</div>
 					</div>
 				)}

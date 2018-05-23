@@ -1,5 +1,8 @@
 import { Component } from "react";
+
 import Actions from "./Actions";
+
+import $ from "./style.css";
 
 class Progress extends Component {
 	render() {
@@ -12,34 +15,22 @@ class Progress extends Component {
 			parseInt(total) < 10 ? "0" + parseInt(total) : parseInt(total);
 
 		return (
-			<div className="container">
+			<div className={$.progress_container}>
 				<div className="to_left">
 					<Actions />
 				</div>
-				<div className="to_right">
+				<div className={$.progress_to_right}>
 					{formattedIndex} / {formattedTotal}.
 				</div>
-				<div className="to_bottom" />
+				<div className="progress_bar" />
 				<style jsx>{`
-					.container {
-						position: relative;
-						display: flex;
-						flex-wrap: wrap;
-						align-items: center;
-						justify-content: space-between;
-						padding: 1.5rem;
-						transition: padding 0.5s ease-in-out;
-					}
-					.to_right {
-						font-weight: 700;
-					}
-					.to_bottom {
+					.progress_bar {
 						flex-basis: 100%;
 						border-bottom: 3px solid #adadad;
 						position: relative;
 						margin: 1.5rem 0;
 					}
-					.to_bottom:after {
+					.progress_bar:after {
 						content: "";
 						position: absolute;
 						top: 0;
@@ -49,16 +40,6 @@ class Progress extends Component {
 						width: ${(index + 1) * (100 / total)}%;
 						height: 3px;
 						background-color: #696969;
-					}
-					@media (min-width: 40rem) {
-						.container {
-							padding: 3rem;
-						}
-					}
-					@media (min-width: 64rem) {
-						.container {
-							padding: 3rem 5.8333vw;
-						}
 					}
 				`}</style>
 			</div>

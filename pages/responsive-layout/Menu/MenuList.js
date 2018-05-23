@@ -2,17 +2,7 @@ import { Component } from "react";
 
 class MenuList extends Component {
 	render() {
-		const background = [
-			"red",
-			"blue",
-			"yellow",
-			"green",
-			"cyan",
-			"pink",
-			"black",
-			"white",
-			"lightgrey",
-		];
+		const background = new Array(9).fill();
 		return (
 			<div>
 				<div className="container">
@@ -25,7 +15,7 @@ class MenuList extends Component {
 				</div>
 				<style jsx>{`
 					.product_details {
-						background: cyan;
+						background: #75ec79;
 						height: 100%;
 						flex-basis: 50%;
 						display: flex;
@@ -33,7 +23,7 @@ class MenuList extends Component {
 					}
 					.product_image {
 						flex-basis: 50%;
-						background: yellow;
+						background: #deffc0;
 						height: 100%;
 					}
 
@@ -41,7 +31,7 @@ class MenuList extends Component {
 						display: flex;
 						width: 100%;
 						height: auto;
-						background: red;
+						background: beige;
 						flex-direction: row;
 						flex-wrap: wrap;
 						justify-content: center;

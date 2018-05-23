@@ -1,9 +1,14 @@
 import { Component } from "react";
+
+import Head from "next/head";
+
+import { Spring } from "react-spring";
+
 import Application, { module } from "./application";
 import TopBar from "./TopBar";
-import Head from "./Head";
 import Content from "./Content";
-import { Spring } from "react-spring";
+
+import $ from "./style.css";
 
 class Page extends Component {
 	render() {
@@ -28,40 +33,19 @@ class Page extends Component {
 							extras: { title: "", content: "" },
 					  };
 			return (
-				<div className="container">
-					<Head />
-
+				<div className={$.container}>
 					<TopBar logo={logo} quote={quote} />
 					<Content
 						article={articles[selectedArticleIndex]}
 						lastArticle={lastArticle}
-						lastIndex={lastSelectedArticleIndex ? lastSelectedArticleIndex : 0}
+						lastIndex={
+							lastSelectedArticleIndex
+								? lastSelectedArticleIndex
+								: 0
+						}
 						currentIndex={selectedArticleIndex}
 						total={articles.length}
 					/>
-					<style jsx>{`
-						:global(body) {
-							margin: 0;
-							overflow-x: hidden;
-							font-family: "Poppins", sans-serif;
-							font-size: 1rem;
-							line-height: 1.4;
-							font-weight: 500;
-							transition: font-size 0.5s ease-in-out;
-						}
-						:global(*) {
-							box-sizing: border-box;
-						}
-						.container {
-							position: relative;
-							background: #fefefe;
-						}
-						@media (min-width: 40rem) {
-							:global(body) {
-								font-size: 1.3rem;
-							}
-						}
-					`}</style>
 				</div>
 			);
 		});
@@ -69,7 +53,15 @@ class Page extends Component {
 }
 
 export default () => (
-	<Application>
-		<Page />
-	</Application>
+	<div className={$.application}>
+		<Head>
+			<link
+				href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700"
+				rel="stylesheet"
+			/>
+		</Head>
+		<Application>
+			<Page />
+		</Application>
+	</div>
 );

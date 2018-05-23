@@ -1,5 +1,4 @@
 import { Component } from "react";
-import MainSection from "./MainSection";
 import Menu from "./Menu";
 import Testimonials from "./Testimonials";
 import Offers from "./Offers";
