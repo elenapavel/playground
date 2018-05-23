@@ -7,8 +7,9 @@ module.exports = withCSS({
 		importLoaders: 1,
 		localIdentName: "[local]_[hash:base64:5]",
 	},
-	assetPrefix: isProduction ? "/playground" : "",
+	assetPrefix: isProduction ? "https://elenapavel.github.io/playground" : "",
 	exportPathMap: () => ({
+		"/": { page: "/" },
 		"/architecture": { page: "/architecture" },
 		"/books": { page: "/books" },
 		"/universe-facts": { page: "/universe-facts" },
