@@ -1,0 +1,325 @@
+.layout {
+	opacity: 1;
+}
+.container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	overflow-y: auto;
+}
+.background_container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bullets {
+	margin-top: 2rem;
+	padding-right: 1.5rem;
+}
+.background_container:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+	width: 100%;
+}
+.categories_container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	transition-property: margin, transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	margin: 1.5rem;
+	z-index: 1;
+}
+.category {
+	width: 10rem;
+	font-size: 1.1rem;
+	transition-property: font-size, transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	letter-spacing: 0.5px;
+	line-height: 2;
+	position: relative;
+	color: #9395a1;
+	cursor: pointer;
+}
+.category_active {
+	color: #fcfcfc;
+}
+.category:before {
+	content: "";
+	position: absolute;
+	right: 100%;
+	left: auto;
+	width: 0;
+	transition: width 0.3s ease-in-out;
+	border-top: 2px solid #fcfcfc;
+	top: 0;
+	bottom: 0;
+	margin: auto 1.5rem;
+	height: 2px;
+}
+.category_active:before {
+	width: 4rem;
+}
+
+.menu {
+	position: relative;
+	right: 0;
+	width: 4rem;
+	top: 0;
+	margin: 0.5rem 0.5rem 0 auto;
+	transition-property: font-size, margin, width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	z-index: 10;
+	display: block;
+	text-align: center;
+	font-size: 3rem;
+	line-height: 1;
+	cursor: pointer;
+}
+.menu_container {
+	z-index: 5;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 1.5rem 0;
+	transition-property: transform, opacity, padding, background;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+.overview_container {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding: 0 1.5rem 3rem;
+	transition-property: width, padding, margin;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+.overview_title {
+	font-size: 2.5rem;
+	margin-top: 1.5rem;
+	transition: font-size 0.3s ease-in-out;
+	letter-spacing: 1.5px;
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	margin-bottom: 3rem;
+}
+.overview_description {
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+	color: #9395a1;
+	padding-left: 0;
+	transition-property: padding-left, font-size;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	position: relative;
+	line-height: 2;
+}
+.overview_description:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	transition: width 0.3s ease-in-out;
+	top: 1rem;
+	border-top: 2px solid #9b8998;
+}
+.list_container {
+	overflow-x: auto;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	width: 100%;
+	padding-left: 1.5rem;
+	margin-bottom: 3rem;
+	transition: padding-left 0.3s ease-in-out;
+}
+.list_items {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.list_item {
+	flex-basis: 15rem;
+	height: 15rem;
+	min-width: 15rem;
+	transition-property: flex-basis, height, min-width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	margin-right: 1.5rem;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 2rem;
+}
+.list_item:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.3s ease-in-out;
+}
+.list_item.list_item_active:before {
+	opacity: 0;
+}
+.list_item_title {
+	font-size: 1.3rem;
+	transition: font-size 0.3s ease-in-out;
+	font-family: "Playfair Display", serif;
+	position: relative;
+}
+.list_item_title:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 3rem;
+	margin-top: 2rem;
+	border-top: 2px solid #cfd1d3;
+}
+@media (min-width: 25rem) {
+	.category {
+		font-size: 1.3rem;
+	}
+	.category_active:before {
+		width: 7rem;
+	}
+	.overview_container {
+		padding: 0 3rem 5rem;
+	}
+	.overview_title {
+		font-size: 3rem;
+	}
+	.overview_description {
+		font-size: 1.1rem;
+	}
+	.list_container {
+		padding-left: 3rem;
+	}
+	.list_item {
+		flex-basis: 18rem;
+		height: 18rem;
+		min-width: 18rem;
+	}
+	.list_item_title {
+		font-size: 1.5rem;
+	}
+	.bullets {
+		/*padding-left: 3rem;*/
+		padding-right: 3rem;
+	}
+}
+@media (min-width: 30rem) {
+	.category_active:before {
+		width: 10rem;
+	}
+	.overview_description {
+		padding-left: 6rem;
+	}
+	.overview_description:before {
+		width: 4rem;
+	}
+}
+@media (min-width: 40rem) {
+	.menu {
+		margin: 2rem 2rem 0 auto;
+	}
+	.menu_container {
+		padding: 3rem 0;
+	}
+	.categories_container {
+		margin: 3rem;
+	}
+	.overview_title {
+		margin-top: 3rem;
+	}
+}
+@media (min-width: 48rem) {
+	.overview_title {
+		font-size: 5rem;
+	}
+	.list_item_title {
+		font-size: 3rem;
+	}
+	.list_item {
+		flex-basis: 25rem;
+		height: 25rem;
+		min-width: 25rem;
+	}
+}
+@media (min-width: 67rem) {
+	.menu {
+		width: 0;
+		font-size: 0;
+		margin: 0;
+	}
+	.menu_container {
+		opacity: 1 !important;
+		transform: translateX(0) !important;
+		background: transparent;
+		padding: 0;
+		position: relative;
+	}
+	.categories_container {
+		margin: 7rem 8rem 10rem;
+	}
+	.categories_container > div {
+		opacity: 1 !important;
+		transform: translateX(0) !important;
+	}
+	.overview_container {
+		position: absolute;
+		margin-bottom: 7rem;
+		width: 40rem;
+		padding: 0 3rem;
+	}
+	.list_container {
+		width: calc(100vw - 40rem);
+		padding-left: 0;
+		margin-bottom: 7rem;
+	}
+	.bullets {
+		padding-left: 0;
+		padding-right: 5rem;
+	}
+}
+@media (min-width: 90rem) {
+	.list_container {
+		width: calc(100vw - 60rem);
+	}
+	.overview_container {
+		width: 60rem;
+	}
+	.overview_title {
+		font-size: 7rem;
+		margin-top: 0;
+	}
+}

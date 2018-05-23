@@ -1,0 +1,52 @@
+:root {
+    --neutral_color: var(--dt-neutral_color);
+    --border_color: var(--dt-border_color);
+    --text_color_light: var(--dt-text_color_light);
+    --text_color: var(--dt-text_color);
+    --bg_color: var(--dt-bg_color);
+    --main_color: var(--dt-main_color);
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 50rem;
+    background-color: var(--neutral_color);
+    color: var(--text_color);
+}
+.header {
+    position: relative;
+    width: 100%;
+    border: 2px solid var(--border_color);
+}
+.actions {
+    width: 100%;
+    font-weight: 700;
+}
+.label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.body {
+    overflow-x: auto;
+}
+.week_days {
+    border-left: 2px solid var(--border_color);
+    border-right: 2px solid var(--border_color);
+    color: var(--text_color_light);
+    width: 100%;
+}
+.grid {
+    width: 100%;
+}

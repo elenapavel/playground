@@ -1,0 +1,17 @@
+.container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.arrow {
+	font-weight: bold;
+	padding: 0.75rem 1rem;
+	position: relative;
+	z-index: 10;
+	transition: padding 0.3s ease-in-out;
+}
+@media (min-width: 30.01rem) {
+	.arrow {
+		padding: 2rem 1.5rem;
+	}
+}
