@@ -2,6 +2,10 @@ import Document, { Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
 	render() {
+		const { __NEXT_DATA__ } = this.props;
+		const { assetPrefix } = __NEXT_DATA__;
+		const stylesheet = `${assetPrefix}/_next/static/style.css`;
+
 		return (
 			<html>
 				<Head>
@@ -26,7 +30,7 @@ export default class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
 					/>
-					<link rel="stylesheet" href="/_next/static/style.css" />
+					<link rel="stylesheet" href={stylesheet} />
 
 					<script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
 				</Head>
