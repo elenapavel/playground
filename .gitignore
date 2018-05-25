@@ -18,7 +18,6 @@ node_modules
 .next
 # ignore npm, use yarn
 package-lock*
-public
 
 # certbot certificates
 ssl
