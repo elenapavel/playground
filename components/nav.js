@@ -1,40 +1,41 @@
 import Link from "next/link";
+import { URL } from "~/playground";
 
 const Nav = () => (
 	<nav>
 		<ul>
 			<li>
-				<Link href="/">
+				<Link href={URL + "/"}>
 					<a>Home</a>
 				</Link>
 			</li>
 			<li>
-				<Link href="/architecture">
+				<Link href={URL + "/architecture"}>
 					<a>Architecture</a>
 				</Link>
 			</li>
 			<li>
-				<Link href="/books">
+				<Link href={URL + "/books"}>
 					<a>Books</a>
 				</Link>
 			</li>
 			<li>
-				<Link href="/universe-facts">
+				<Link href={URL + "/universe-facts"}>
 					<a>Universe Facts</a>
 				</Link>
 			</li>
 			<li>
-				<Link href="/plants">
+				<Link href={URL + "/plants"}>
 					<a>Plants</a>
 				</Link>
 			</li>
 			<li>
-				<Link href="/responsive-layout">
+				<Link href={URL + "/responsive-layout"}>
 					<a>Responsive Layout</a>
 				</Link>
 			</li>
 			<li>
-				<Link href="/grid">
+				<Link href={URL + "/grid"}>
 					<a>Grid</a>
 				</Link>
 			</li>

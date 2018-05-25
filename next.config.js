@@ -9,6 +9,7 @@ const publicURL = isProduction
 const config = {
 	assetPrefix: publicURL,
 	publicRuntimeConfig: {
+		url: publicURL,
 		static: isProduction ? `${publicURL}/static` : "/static"
 	},
 	exportPathMap: () => ({
