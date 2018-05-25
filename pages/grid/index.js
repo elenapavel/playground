@@ -16,7 +16,7 @@ class Page extends Component {
 			"9",
 			"10",
 			"11",
-			"12",
+			"12"
 		];
 		return (
 			<div className="container">
@@ -33,18 +33,18 @@ class Page extends Component {
 						{
 							point: 1024,
 							columns: 3,
-							gutters: 0,
+							gutters: 0
 						},
 						{
 							point: 768,
 							columns: 2,
-							gutters: 0,
+							gutters: 0
 						},
 						{
 							point: 480,
 							columns: 1,
-							gutters: 0,
-						},
+							gutters: 0
+						}
 					]}
 				/>
 				<Grid columns="7" elements={["7", "7", "7", "7", "7", "7", "7"]} />
@@ -65,7 +65,7 @@ class Page extends Component {
 						"10",
 						"10",
 						"10",
-						"10",
+						"10"
 					]}
 				/>
 				<Grid
@@ -81,7 +81,7 @@ class Page extends Component {
 						"11",
 						"11",
 						"11",
-						"11",
+						"11"
 					]}
 				/>
 				<Grid
@@ -98,7 +98,7 @@ class Page extends Component {
 						"12",
 						"12",
 						"12",
-						"12",
+						"12"
 					]}
 				/>
 				<Grid
@@ -119,7 +119,7 @@ class Page extends Component {
 						"12",
 						"12",
 						"12",
-						"12",
+						"12"
 					]}
 				/>
 

@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { STATIC } from "~/playground.js";
 
 class SocialMedia extends Component {
 	render() {
@@ -12,8 +13,7 @@ class SocialMedia extends Component {
 					{items.map((item, key) => {
 						const item_key = Object.keys(item)[0];
 						const item_value = Object.values(item)[0];
-						const icon_path =
-							"/static/social_icons/" + item_key + ".svg";
+						const icon_path = STATIC + "/social_icons/" + item_key + ".svg";
 						const itemClasses = "item " + item_key;
 						return (
 							<div key={key} className={itemClasses}>

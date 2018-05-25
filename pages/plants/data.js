@@ -1,5 +1,7 @@
+import { STATIC } from "~/playground.js";
+
 export default {
-	logo: "/static/images/logo_plants.png",
+	logo: STATIC + "/images/logo_plants.png",
 	sections: [
 		{
 			label: "Nature's edition",
@@ -11,8 +13,7 @@ export default {
 						'While often marketed as a "plant" in a pot, in its natural state, it grows to 98 feet tall. Despite its fragility as a species in the wild, it has become a very popular houseplant due to its beautiful leaves and slow-growing nature.',
 					category: "Palms",
 					species: "20 species",
-					image:
-						"https://www.ikea.com/PIAimages/0121015_PE277828_S5.JPG",
+					image: "https://www.ikea.com/PIAimages/0121015_PE277828_S5.JPG"
 				},
 				{
 					scientificName: "Chamaedorea elegans",
@@ -21,8 +22,7 @@ export default {
 						"It is one of several species with leaves that are harvested as xate. It is a versatile and almost no-maintenance plant that is able to grow in every indoor and outdoor condition possible with little help and care.",
 					category: "Palms",
 					species: "107 species",
-					image:
-						"https://www.ikea.com/PIAimages/0121094_PE277873_S5.JPG",
+					image: "https://www.ikea.com/PIAimages/0121094_PE277873_S5.JPG"
 				},
 				{
 					scientificName: "Howea forsteriana",
@@ -32,7 +32,7 @@ export default {
 					category: "Palms",
 					species: "2 species",
 					image:
-						"https://www.intratuin.nl/media/catalog/product/8/7/8717263113393_0.jpg",
+						"https://www.intratuin.nl/media/catalog/product/8/7/8717263113393_0.jpg"
 				},
 				{
 					scientificName: "Ficus Elastica",
@@ -41,8 +41,7 @@ export default {
 						"Ficus elastica is grown around the world as an ornamental plant, outside in frost-free climates from the tropical to the Mediterranean and inside in colder climates as a houseplant.",
 					category: "Ficus",
 					species: "850 species",
-					image:
-						"https://www.ikea.com/PIAimages/0554641_PE659882_S5.JPG",
+					image: "https://www.ikea.com/PIAimages/0554641_PE659882_S5.JPG"
 				},
 				{
 					scientificName: "Myriophyllum simulans",
@@ -52,7 +51,7 @@ export default {
 					category: "Aquatic Plants",
 					species: "69 species",
 					image:
-						"https://www.aquasabi.com/vcdn/images/item/zoom/bCN06JJwbV/myriophyllum-simulans.jpg",
+						"https://www.aquasabi.com/vcdn/images/item/zoom/bCN06JJwbV/myriophyllum-simulans.jpg"
 				},
 				{
 					scientificName: "Tillandsia Caput Medusae",
@@ -62,20 +61,20 @@ export default {
 					category: "Tillandsia",
 					species: "650 species",
 					image:
-						"https://www.luchtplantjes.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/i/tillandsia-caput-medusae-xl-luchtplantjes-air-plants.jpg",
-				},
-			],
-		},
+						"https://www.luchtplantjes.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/i/tillandsia-caput-medusae-xl-luchtplantjes-air-plants.jpg"
+				}
+			]
+		}
 	],
 	socialMedia: [
 		{
-			instagram: "https://instagram.com",
+			instagram: "https://instagram.com"
 		},
 		{
-			facebook: "https://facebook.com",
+			facebook: "https://facebook.com"
 		},
 		{
-			twitter: "https://twitter.com",
-		},
-	],
+			twitter: "https://twitter.com"
+		}
+	]
 };
