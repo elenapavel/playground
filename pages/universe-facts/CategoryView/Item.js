@@ -1,7 +1,10 @@
 import { PureComponent } from "react";
-import { module } from "../application";
+
 import { Spring } from "react-spring";
 import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
+import { module } from "../application";
+
 import $ from "./style.css";
 
 class Item extends PureComponent {

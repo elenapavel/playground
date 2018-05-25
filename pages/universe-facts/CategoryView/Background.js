@@ -1,6 +1,9 @@
 import { PureComponent } from "react";
-import { module } from "../application";
+
 import { Transition, config } from "react-spring";
+
+import { module } from "../application";
+
 import $ from "./style.css";
 
 class Background extends PureComponent {

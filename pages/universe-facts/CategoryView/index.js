@@ -1,11 +1,15 @@
 import { Component } from "react";
-import { module } from "../application";
+
 import { Spring, config } from "react-spring";
 import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
+import { module } from "../application";
+
 import Background from "./Background";
 import TopPanel from "./TopPanel";
 import Overview from "./Overview";
 import Listing from "./Listing";
+
 import $ from "./style.css";
 
 class CategoryView extends Component {

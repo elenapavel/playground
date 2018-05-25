@@ -1,6 +1,9 @@
 import { PureComponent } from "react";
-import { module } from "../application";
+
 import { Spring, Trail, config, animated } from "react-spring";
+
+import { module } from "../application";
+
 import $ from "./style.css";
 
 class TopPanel extends PureComponent {

@@ -1,4 +1,5 @@
 import Item from "./Item";
+
 import $ from "./style.css";
 
 const Gallery = ({ items }) => (

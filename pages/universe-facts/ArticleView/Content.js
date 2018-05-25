@@ -1,5 +1,6 @@
 import { Spring } from "react-spring";
 import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
 import $ from "./style.css";
 
 const Content = ({ content }) => (

@@ -1,19 +1,10 @@
 import { Component } from "react";
 
+import $ from "./style.css";
+
 class Testimonial extends Component {
 	render() {
-		return (
-			<div className="container">
-				<style jsx>{`
-					.container {
-						position: relative;
-						height: 5rem;
-						background: grey;
-						margin-top: 2rem;
-					}
-				`}</style>
-			</div>
-		);
+		return <div className={$.testimonial_container} />;
 	}
 }
 

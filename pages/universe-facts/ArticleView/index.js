@@ -1,14 +1,18 @@
 import { Component } from "react";
-import $ from "./style.css";
+
+import { Spring, config } from "react-spring";
+import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
+import { module } from "../application";
+
 import Background from "./Background";
 import Bullets from "../Bullets";
 import Action from "./Action";
 import Gallery from "./Gallery";
 import Overview from "./Overview";
 import Content from "./Content";
-import { module } from "../application";
-import { Spring, config } from "react-spring";
-import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
+import $ from "./style.css";
 
 class ArticleView extends Component {
 	render() {

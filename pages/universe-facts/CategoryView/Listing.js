@@ -1,6 +1,8 @@
 import { PureComponent } from "react";
+
 import Item from "./Item";
 import Bullets from "../Bullets";
+
 import $ from "./style.css";
 
 class Listing extends PureComponent {

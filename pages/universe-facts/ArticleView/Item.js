@@ -1,6 +1,7 @@
-import $ from "./style.css";
 import { Spring } from "react-spring";
 import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
+import $ from "./style.css";
 
 const Item = ({ backgroundImage, index }) => {
 	const itemsIn = {

@@ -1,5 +1,7 @@
 import { PureComponent } from "react";
+
 import { module } from "../application";
+
 import $ from "./style.css";
 
 class Action extends PureComponent {

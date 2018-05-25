@@ -1,6 +1,8 @@
 import { PureComponent } from "react";
+
 import { Transition } from "react-spring";
 import { TimingAnimation, Easing } from "react-spring/dist/addons.cjs";
+
 import $ from "./style.css";
 
 class Overview extends PureComponent {
