@@ -7,21 +7,23 @@ const publicURL = isProduction
 	: "";
 const staticURL = isProduction ? `${publicURL}/static` : "/static";
 
+const routes = {
+	"/": { page: "/" },
+	"/books": { page: "/books" },
+	"/plants": { page: "/plants" },
+	"/architecture": { page: "/architecture" },
+	"/universe-facts": { page: "/universe-facts" },
+	"/responsive-layout": { page: "/responsive-layout" },
+	"/grid": { page: "/grid" }
+};
+
 const config = {
 	assetPrefix: publicURL,
 	publicRuntimeConfig: {
 		publicURL,
 		staticURL
 	},
-	exportPathMap: () => ({
-		"/": { page: "/" },
-		"/architecture": { page: "/architecture" },
-		"/books": { page: "/books" },
-		"/universe-facts": { page: "/universe-facts" },
-		"/plants": { page: "/plants" },
-		"/responsive-layout": { page: "/responsive-layout" },
-		"/grid": { page: "/grid" }
-	}),
+	exportPathMap: () => routes,
 	webpack(config, options) {
 		config.resolve.alias["~"] = config.context;
 		config.output.publicPath = isProduction ? `/${repository}` : "/";
