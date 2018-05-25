@@ -5,12 +5,13 @@ const repository = "playground";
 const publicURL = isProduction
 	? `https://elenapavel.github.io/${repository}`
 	: "";
+const staticURL = isProduction ? `${publicURL}/static` : "/static";
 
 const config = {
 	assetPrefix: publicURL,
 	publicRuntimeConfig: {
-		url: publicURL,
-		static: isProduction ? `${publicURL}/static` : "/static"
+		publicURL,
+		staticURL
 	},
 	exportPathMap: () => ({
 		"/": { page: "/" },
@@ -29,11 +30,15 @@ const config = {
 	}
 };
 
-module.exports = withCSS({
+const cssModules = {
 	cssModules: true,
 	cssLoaderOptions: {
 		importLoaders: 1,
 		localIdentName: "[local]_[hash:base64:5]"
-	},
+	}
+};
+
+module.exports = withCSS({
+	...cssModules,
 	...config
 });
