@@ -9,6 +9,7 @@
 	right: 0;
 	z-index: 10;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 .background_container {
 	position: fixed;
@@ -145,7 +146,6 @@
 	border-top: 2px solid #9b8998;
 }
 .list_container {
-	overflow-x: auto;
 	display: inline-block;
 	vertical-align: top;
 	float: right;
@@ -159,6 +159,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	overflow-x: auto;
 }
 .list_item {
 	flex-basis: 15rem;

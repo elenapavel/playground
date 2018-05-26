@@ -208,12 +208,14 @@
 		margin-right: 0;
 		position: absolute;
 	}
-	.content_gallery {
-		margin-left: 10rem;
-		margin-right: 0;
-	}
 	.content {
-		margin: 0 10rem;
+		margin: 0 5rem;
+		line-height: 1.685;
+	}
+	.content_gallery {
+		margin-left: 5rem;
+		margin-bottom: 5rem;
+		margin-right: 0;
 	}
 	.bullets {
 		background: transparent;
@@ -227,15 +229,18 @@
 		font-size: 4rem;
 	}
 }
-@media (min-width: 90rem) {
+@media (min-width: 100rem) {
 	.overview_container {
 		width: calc(100% - 60rem);
 	}
 	.content_container {
 		width: 60rem;
-		margin: 15rem;
+		margin: 10rem;
 		margin-left: calc(100% - 60rem);
 		margin-right: 0;
+	}
+	.content {
+		margin: 0 10rem;
 	}
 	.bullets {
 		right: 60rem;

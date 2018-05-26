@@ -3,9 +3,10 @@ import { Component, cloneElement } from "react";
 import isSameDay from "date-fns/is_same_day";
 import isWeekend from "date-fns/is_weekend";
 
-import Head from "./Head";
+import Head from "next/head";
 import Tabs from "./Tabs";
 import Calendar from "./Calendar";
+
 import $ from "./style.css";
 
 const specialDates = [
@@ -36,7 +37,7 @@ const specialDates = [
 	},
 ];
 
-const viewTabs = ["year", "month", "week"];
+const viewTabs = ["year", "month"];
 
 const SpecialDay = ({ date }) => (
 	<div>
@@ -135,7 +136,8 @@ class Application extends Component {
 			borderColor: "yellow",
 			padding: "0.75rem 0",
 		};
-		if (cell != null)
+
+		if (cell != null) {
 			return cloneElement(
 				cell,
 				{
@@ -146,6 +148,8 @@ class Application extends Component {
 					<SpecialDay date={date} />
 				</div>
 			);
+		}
+
 		return content;
 	}
 
@@ -159,6 +163,7 @@ class Application extends Component {
 
 	render() {
 		const { date, view } = this.state;
+
 		return (
 			<div>
 				<Head />
@@ -180,4 +185,18 @@ class Application extends Component {
 	}
 }
 
-export default () => <Application />;
+export default () => (
+	<div className={$.application}>
+		<Head>
+			<link
+				rel="stylesheet"
+				href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+			/>
+			<link
+				href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+				rel="stylesheet"
+			/>
+		</Head>
+		<Application />
+	</div>
+);

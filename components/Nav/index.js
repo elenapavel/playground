@@ -30,6 +30,11 @@ const Nav = () => (
 				</Link>
 			</li>
 			<li>
+				<Link href={URL + "/calendar"}>
+					<a>Calendar</a>
+				</Link>
+			</li>
+			<li>
 				<Link href={URL + "/responsive-layout"}>
 					<a>Responsive Layout</a>
 				</Link>

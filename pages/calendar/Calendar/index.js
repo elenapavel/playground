@@ -42,21 +42,7 @@ export default class Calendar extends Component {
 
 		this.setView(view, inViewMonth, inViewYear);
 	}
-	componentWillUpdate() {
-		if (
-			this.state.inViewMonth !=
-			parseInt(format(this.state.selectedDate, "M")) - 1
-		)
-			this.setMonth(parseInt(format(this.state.selectedDate, "M")) - 1);
-		if (
-			this.state.inViewYear !=
-			parseInt(format(this.state.selectedDate, "YYYY"))
-		)
-			this.setYear(parseInt(format(this.state.selectedDate, "YYYY")));
-	}
 	setDay(date) {
-		this.setState({ selectedDate: date });
-		this.setDaysInMonthView(parseInt(format(date, "M")) - 1);
 		this.props.onChangeDate(date);
 	}
 	setMonth(month) {

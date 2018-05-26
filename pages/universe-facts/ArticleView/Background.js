@@ -13,7 +13,7 @@ class Background extends PureComponent {
 	componentDidMount() {
 		this.setState({
 			backgroundWidth:
-				window.innerWidth > 1439
+				window.innerWidth > 1599
 					? 100 - 96000 / window.innerWidth + "%"
 					: window.innerWidth > 1071
 						? 100 - 64000 / window.innerWidth + "%"

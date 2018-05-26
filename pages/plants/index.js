@@ -28,17 +28,12 @@ export default () => (
 					/>
 					<Menu />
 					<style jsx>{`
-						:global(body) {
-							margin: 0;
-							overflow-x: hidden;
-						}
-						:global(*) {
-							box-sizing: border-box;
-						}
 						.container {
 							position: relative;
 							font-family: "Lato", sans-serif;
 							line-height: 1.4;
+							overflow-x: hidden;
+							overflow-y: auto;
 						}
 						.content {
 							transition: all 0.5s ease-in-out;

@@ -1,13 +1,10 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
+.application {
 	font-family: "Open Sans", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 	color: var(--text_color);
 	background: var(--bg_color);
 	position: relative;
-	margin: 0;
+	height: 100vh;
+	overflow: auto;
 }

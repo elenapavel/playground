@@ -1,6 +1,8 @@
 import { Component } from "react";
+
+import Head from "next/head";
+
 import Application, { module } from "./application";
-import head from "./head";
 import TopBar from "./TopBar";
 import Account from "./Account";
 import Tabs from "./Tabs";
@@ -21,8 +23,7 @@ class Page extends Component {
 				selectedCategoryIndex,
 			} = store;
 			return (
-				<div className="application">
-					{head}
+				<div className="container">
 					<TopBar
 						isAccountView={view == "myAccount"}
 						user={user}
@@ -59,16 +60,9 @@ class Page extends Component {
 						}
 					/>
 					<style jsx>{`
-						:global(body) {
-							margin: 0;
-							background: #e6e6ec;
-						}
-						:global(*) {
-							box-sizing: border-box;
-						}
-						.application {
+						.container {
 							position: relative;
-							width: 32.5rem;
+							max-width: 32.5rem;
 							margin: 5rem auto;
 							border-radius: 0.5rem;
 							overflow: hidden;
@@ -83,7 +77,26 @@ class Page extends Component {
 }
 
 export default () => (
-	<Application>
-		<Page />
-	</Application>
+	<div className="application">
+		<Head>
+			<link
+				rel="stylesheet"
+				href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+			/>
+			<link
+				href="https://fonts.googleapis.com/css?family=Cabin:400,600&amp;subset=latin-ext"
+				rel="stylesheet"
+			/>
+		</Head>
+		<Application>
+			<Page />
+		</Application>
+		<style jsx>{`
+			.application {
+				height: 100vh;
+				overflow-y: auto;
+				background: #e6e6ec;
+			}
+		`}</style>
+	</div>
 );
