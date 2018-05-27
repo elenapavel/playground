@@ -3,6 +3,8 @@
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	border-left: 2px solid var(--border_color);
+	border-right: 2px solid var(--border_color);
 }
 .week_day {
 	flex-basis: calc(100% / 7);

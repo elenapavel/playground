@@ -1,0 +1,92 @@
+:root {
+	--main_color: #1a8fff;
+	--text_color: #777;
+	--text_color_light: #ccc;
+	--border_color: #eee;
+	--bg_color: #f9f9f9;
+	--neutral_color: #fff;
+}
+
+.calendar {
+	position: relative;
+	max-width: 50rem;
+	margin: auto;
+}
+.header {
+	position: relative;
+	width: 100%;
+	border: 2px solid var(--border_color);
+	display: flex;
+	justify-content: space-between;
+}
+.arrow {
+	font-weight: bold;
+	padding: 0.75rem 1rem;
+	position: relative;
+	z-index: 10;
+	transition: padding 0.3s ease-in-out;
+}
+.label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid var(--border_color);
+}
+.grid_item {
+	position: relative;
+	flex-basis: calc(100% / 7);
+	max-width: calc(100% / 7);
+}
+
+.day {
+	width: calc(100% + 2px);
+	border: 2px solid var(--border_color);
+	margin: -1px;
+	transition: border-color 0.3s ease-in-out;
+	font-weight: bold;
+	padding: 0.75rem;
+	word-wrap: break-word;
+	text-align: center;
+	transition: padding 0.3s ease-in-out;
+	height: calc(100% + 2px);
+	position: relative;
+}
+.day_default {
+	composes: day;
+}
+.day_current {
+	composes: day;
+	color: var(--main_color);
+}
+.day_next,
+.day_previous {
+	composes: day;
+	color: var(--text_color_light);
+}
+.day_selected {
+	composes: day;
+	border-color: var(--main_color);
+	z-index: 10;
+}
+.day_current_selected {
+	composes: day day_selected day_current;
+}
+@media (min-width: 30.01rem) {
+	.arrow {
+		padding: 2rem 1.5rem;
+	}
+}

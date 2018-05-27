@@ -5,7 +5,7 @@ import isWeekend from "date-fns/is_weekend";
 
 import Head from "next/head";
 import Tabs from "./Tabs";
-import Calendar from "./Calendar";
+import Calendar from "~/components/Calendar";
 
 import $ from "./style.css";
 
@@ -100,15 +100,19 @@ class Application extends Component {
 			date: "2018-05",
 			view: "month",
 		};
+
+		// setInterval(() => {
+		// 	this.setState({ date: new Date() });
+		// }, 1000);
 	}
 
-	onRender({ dayNumber, date }, cell) {
+	onRender({ dayOfMonth, date }, cell) {
 		const content =
-			dayNumber === 12 ? (
+			dayOfMonth === 12 ? (
 				<div>dev</div>
 			) : (
 				<div>
-					{dayNumber}
+					{dayOfMonth}
 					<SpecialDay date={date} />
 				</div>
 			);
@@ -131,7 +135,7 @@ class Application extends Component {
 		return content;
 	}
 
-	onSelect({ date, dayNumber }, cell) {
+	onSelect = (date, dayOfMonth, type, cell) => {
 		const styles = {
 			borderColor: "yellow",
 			padding: "0.75rem 0",
@@ -144,18 +148,14 @@ class Application extends Component {
 					style: styles,
 				},
 				<div>
-					{dayNumber}
+					{dayOfMonth}
 					<SpecialDay date={date} />
 				</div>
 			);
 		}
 
-		return content;
-	}
-
-	onChangeDate(date) {
 		this.setState({ date: date });
-	}
+	};
 
 	onChangeViewByIndex(viewIndex) {
 		this.setState({ view: viewTabs[viewIndex] });
@@ -166,18 +166,16 @@ class Application extends Component {
 
 		return (
 			<div>
-				<Head />
-				<Tabs
+				{/*<Tabs
 					items={viewTabs}
 					active="1"
 					onChangeViewByIndex={view => this.onChangeViewByIndex(view)}
-				/>
+				/>*/}
 				<Calendar
 					date={date}
-					onChangeDate={date => this.onChangeDate(date)}
-					onRender={this.onRender}
-					onSelect={this.onSelect}
 					view={view}
+					onChange={this.onSelect}
+					onRender={this.onRender}
 				/>
 				<DisplaySpecialDay date={date} />
 			</div>
