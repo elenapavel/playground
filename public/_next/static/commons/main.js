@@ -36003,11 +36003,11 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/architecture/Content/style.css":
+/***/ "./pages/plants/style.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"container":"container_2f1z5","to_left":"to_left_3IKRt","to_right":"to_right_2GsWC","actions_container":"actions_container_3e1CR","action":"action_3Gd9Q","content_container":"content_container_3JMxG","content_title":"content_title_2IuqJ","details_section":"details_section_V-IOd","category":"category_1_E0f","date":"date_3hSyH","content":"content_1pc06","paragraph":"paragraph_32x-d","more":"more_1l5E4","image_container":"image_container_1AUdf","image":"image_2lEJA","extras":"extras_1XSki","image_title":"image_title_9jbK0","image_content":"image_content_33tOB","progress_container":"progress_container_2WuHA","progress_to_right":"progress_to_right_3o_2N"};;
+module.exports = {"application":"application_1E6rR","content":"content_-hwSI","menu":"menu_20cnF"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -36029,75 +36029,7 @@ module.exports = {"container":"container_2f1z5","to_left":"to_left_3IKRt","to_ri
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1527431972144");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/architecture/TopBar/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_Qn8Op","to_left":"to_left_1s-Tb","to_right":"to_right_2Cr-2","logo":"logo_1B6GZ","quote":"quote_2fKrA","categories_container":"categories_container_RTquq","categories_overlay":"categories_overlay_3-Mg7","category":"category_1ix04"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1527431972147");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./pages/architecture/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"application":"application_19jE4","container":"container_3gfI8"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1527431972141");
+            injectCss(link, link.href.split("?")[0] + "?unix=1527459647971");
           });
       }
     }
