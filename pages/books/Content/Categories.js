@@ -44,6 +44,7 @@ class Categories extends PureComponent {
 							padding: 0 0 4rem;
 						}
 						.category {
+							cursor: pointer;
 							width: 7rem;
 							height: 7rem;
 							border-radius: 0.3rem;

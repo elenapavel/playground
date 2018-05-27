@@ -45,7 +45,9 @@ class BookCard extends Component {
 							className="title"
 							onClick={e =>
 								this.setCardState(
-									state == "expanded" ? "collpased" : "expanded"
+									state == "expanded"
+										? "collpased"
+										: "expanded"
 								)
 							}
 						>
@@ -146,6 +148,7 @@ class BookCard extends Component {
 						opacity: 1;
 					}
 					.title {
+						cursor: pointer;
 						color: #2a2734;
 						font-size: 1rem;
 						font-family: "Cabin", sans-serif;

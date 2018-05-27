@@ -19,13 +19,15 @@ class ArticleContent extends Component {
 			lastMore,
 			lastCategory,
 		} = this.props;
+
 		return (
 			<div className={$.content_container}>
 				<Spring
 					impl={TimingAnimation}
-					config={{ delay: 300, duration: 400, easing: Easing.in }}
+					config={{ delay: 150, duration: 200, easing: Easing.in }}
 					from={{ opacity: 0, transform: "translateY(3rem)" }}
 					to={{ opacity: 1, transform: "translateY(0)" }}
+					reset
 				>
 					{styles => (
 						<animated.div style={styles}>
@@ -35,9 +37,10 @@ class ArticleContent extends Component {
 				</Spring>
 				<Spring
 					impl={TimingAnimation}
-					config={{ delay: 500, duration: 300, easing: Easing.in }}
+					config={{ delay: 250, duration: 150, easing: Easing.in }}
 					from={{ opacity: 0, transform: "translateY(1rem)" }}
 					to={{ opacity: 1, transform: "translateY(0)" }}
+					reset
 				>
 					{styles => (
 						<animated.div style={styles}>
@@ -50,9 +53,10 @@ class ArticleContent extends Component {
 				</Spring>
 				<Spring
 					impl={TimingAnimation}
-					config={{ delay: 600, duration: 300, easing: Easing.in }}
+					config={{ delay: 300, duration: 150, easing: Easing.in }}
 					from={{ opacity: 0 }}
 					to={{ opacity: 1 }}
+					reset
 				>
 					{styles => (
 						<animated.div style={styles}>
