@@ -1,5 +1,4 @@
 import { PureComponent } from "react";
-import Head from "./Head";
 import Logo from "./Logo";
 import Content from "./Content";
 import SocialMedia from "./SocialMedia";
@@ -12,26 +11,27 @@ class Plantoid extends PureComponent {
 				logo,
 				section,
 				plants,
-				lastSelectedPlant,
-				selectedPlant,
+				lastSelectedPlantIndex,
 				selectedPlantIndex,
 				socialMedia,
 			} = plantoid;
 
-			const lastPlant = lastSelectedPlant
-				? lastSelectedPlant
-				: {
-						scientificName: "",
-						commonName: "",
-						content: "",
-						category: "",
-						species: "",
-						image: "",
-				  };
+			const lastSelectedPlant =
+				lastSelectedPlantIndex != null
+					? lastSelectedPlant
+					: {
+							scientificName: "",
+							commonName: "",
+							content: "",
+							category: "",
+							species: "",
+							image: "",
+					  };
+
+			const selectedPlant = plants[selectedPlantIndex];
 
 			return (
 				<div className="application">
-					<Head />
 					<div className="to_top">
 						<Logo logo={logo} />
 					</div>
@@ -43,12 +43,12 @@ class Plantoid extends PureComponent {
 							category={selectedPlant.category}
 							species={selectedPlant.species}
 							image={selectedPlant.image}
-							lastTitle={lastPlant.scientificName}
-							lastName={lastPlant.commonName}
-							lastContent={lastPlant.content}
-							lastCategory={lastPlant.category}
-							lastSpecies={lastPlant.species}
-							lastImage={lastPlant.image}
+							lastTitle={lastSelectedPlant.scientificName}
+							lastName={lastSelectedPlant.commonName}
+							lastContent={lastSelectedPlant.content}
+							lastCategory={lastSelectedPlant.category}
+							lastSpecies={lastSelectedPlant.species}
+							lastImage={lastSelectedPlant.image}
 							label={section.label}
 							lastIndex={plants.indexOf(selectedPlant)}
 							currentIndex={selectedPlantIndex}
@@ -64,6 +64,7 @@ class Plantoid extends PureComponent {
 							display: block;
 							flex-direction: row;
 							flex-wrap: wrap;
+							min-height: 32rem;
 						}
 						.to_center {
 							flex-basis: calc(100% - 4rem);
@@ -75,9 +76,10 @@ class Plantoid extends PureComponent {
 							.application {
 								height: 100vh;
 								display: flex;
+								overflow-y: hidden;
 							}
 						}
-						@media (min-width: 80rem) {
+						@media (min-width: 90rem) and (min-height: 56.25rem) {
 							.to_center {
 								flex-basis: calc(100% - 8rem);
 							}

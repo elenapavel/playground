@@ -1,7 +1,7 @@
-import { Component } from "react";
+import { PureComponent } from "react";
 import { Spring, Transition, config } from "react-spring";
 
-class PlantDetails extends Component {
+class PlantDetails extends PureComponent {
 	render() {
 		const {
 			title,
@@ -206,9 +206,6 @@ class PlantDetails extends Component {
 						}
 					}
 					@media (min-width: 48rem) {
-						.title {
-							font-size: 5rem;
-						}
 						.capitalize {
 							font-size: 1.2rem;
 						}
@@ -225,8 +222,11 @@ class PlantDetails extends Component {
 						}
 						.title {
 							position: absolute;
-							left: calc(100% - 8rem);
+							left: 8rem;
 							bottom: 0;
+							right: 0;
+							text-align: right;
+							word-break: break-word;
 						}
 						.to_top {
 							padding: 0 0 0 8rem;
@@ -236,6 +236,14 @@ class PlantDetails extends Component {
 						}
 					}
 					@media (min-width: 80rem) {
+						.title {
+							font-size: 4rem;
+						}
+					}
+					@media (min-width: 90rem) and (min-height: 56.25rem) {
+						.title {
+							left: 16rem;
+						}
 						.to_top:before {
 							left: 8rem;
 							width: 8rem;
@@ -252,6 +260,11 @@ class PlantDetails extends Component {
 						}
 						.label {
 							left: -7.5rem;
+						}
+					}
+					@media (min-width: 105rem) and (min-height: 56.25rem) {
+						.title {
+							font-size: 5rem;
 						}
 					}
 				`}</style>

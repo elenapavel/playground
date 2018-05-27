@@ -7,14 +7,9 @@ export default unistore({
 		sections: data.sections,
 		section: data.sections[0],
 		plants: data.sections[0].plants,
-		selectedPlant: data.sections[0].plants[0],
 		selectedPlantIndex: 0,
-		lastSelectedPlant: null,
+		lastSelectedPlantIndex: null,
 		socialMedia: data.socialMedia,
-	},
-	menu: {
-		isOpen: false,
-		selectedIndex: 0,
-		items: data.sections[0].plants,
+		isMenuOpened: false,
 	},
 });

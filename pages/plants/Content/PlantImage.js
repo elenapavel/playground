@@ -1,7 +1,7 @@
-import { Component } from "react";
+import { PureComponent } from "react";
 import { Transition, animated, config } from "react-spring";
 
-class PlantImage extends Component {
+class PlantImage extends PureComponent {
 	render() {
 		const {
 			title,
@@ -28,7 +28,7 @@ class PlantImage extends Component {
 		return (
 			<div className="container">
 				<Transition
-					keys={(image, lastImage)}
+					keys={image}
 					config={config.stiff}
 					from={{
 						opacity: 0,
@@ -50,7 +50,7 @@ class PlantImage extends Component {
 					)}
 				</Transition>
 				<Transition
-					keys={(title, lastTitle)}
+					keys={title}
 					config={config.default}
 					from={{ opacity: 0, transform: "translateY(100%)" }}
 					enter={{ opacity: 1, transform: "translateY(0%)" }}
@@ -69,7 +69,7 @@ class PlantImage extends Component {
 					)}
 				</Transition>
 				<Transition
-					keys={(index, lastIndex)}
+					keys={index}
 					config={config.default}
 					from={{ opacity: 0, transform: "translateY(100%)" }}
 					enter={{ opacity: 1, transform: "translateY(0%)" }}
@@ -185,7 +185,7 @@ class PlantImage extends Component {
 							background-size: cover;
 						}
 					}
-					@media (min-width: 80rem) {
+					@media (min-width: 90rem) and (min-height: 56.25rem) {
 						.container {
 							padding: 8rem;
 						}

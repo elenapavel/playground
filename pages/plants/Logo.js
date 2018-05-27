@@ -15,7 +15,7 @@ class LeftSide extends Component {
 					.logo {
 						position: absolute;
 						top: 1.5rem;
-						left: 2rem;
+						left: 0rem;
 						z-index: 10;
 					}
 					.logo img {
@@ -23,13 +23,15 @@ class LeftSide extends Component {
 						display: block;
 					}
 					@media (min-width: 30rem) {
-						left: 4rem;
+						.logo {
+							left: 4rem;
+						}
 					}
-					@media (min-width: 80rem) {
+					@media (min-width: 90rem) and (min-height: 56.25rem) {
 						.logo {
 							top: 8rem;
 							bottom: 8rem;
-							left: 3rem;
+							left: 8rem;
 						}
 					}
 				`}</style>

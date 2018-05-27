@@ -3,7 +3,7 @@ const { assign } = Object;
 export default store => ({
 	selectPlantByIndex(state, index) {
 		const plantoid = assign({}, state.plantoid);
-		const menu = assign({}, state.menu);
+
 		plantoid.lastSelectedPlant = plantoid.selectedPlant;
 		if (index == plantoid.plants.length) {
 			plantoid.selectedPlantIndex = 0;
@@ -14,16 +14,15 @@ export default store => ({
 		}
 		plantoid.selectedPlant = plantoid.plants[plantoid.selectedPlantIndex];
 
-		menu.isOpen = false;
-		menu.selectedIndex = plantoid.selectedPlantIndex;
+		plantoid.isMenuOpened = false;
 
-		return { plantoid, menu };
+		return { plantoid };
 	},
 	toggleMenu(state) {
-		const menu = assign({}, state.menu);
+		const plantoid = assign({}, state.plantoid);
 
-		menu.isOpen = !menu.isOpen;
+		plantoid.isMenuOpened = !plantoid.isMenuOpened;
 
-		return { menu };
+		return { plantoid };
 	},
 });

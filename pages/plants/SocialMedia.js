@@ -13,7 +13,8 @@ class SocialMedia extends Component {
 					{items.map((item, key) => {
 						const item_key = Object.keys(item)[0];
 						const item_value = Object.values(item)[0];
-						const icon_path = STATIC + "/social_icons/" + item_key + ".svg";
+						const icon_path =
+							STATIC + "/social_icons/" + item_key + ".svg";
 						const itemClasses = "item " + item_key;
 						return (
 							<div key={key} className={itemClasses}>
@@ -79,7 +80,7 @@ class SocialMedia extends Component {
 							margin-top: 2rem;
 						}
 					}
-					@media (min-width: 80rem) {
+					@media (min-width: 90rem) and (min-height: 56.25rem) {
 						.container {
 							padding: 3rem 0;
 						}

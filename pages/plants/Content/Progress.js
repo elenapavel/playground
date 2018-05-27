@@ -136,7 +136,7 @@ class Progress extends Component {
 							padding: 0 2rem;
 						}
 					}
-					@media (min-width: 80rem) {
+					@media (min-width: 90rem) and (min-height: 56.25rem) {
 						.container {
 							padding: 0 8rem 0 8rem;
 						}

@@ -2,20 +2,20 @@ import { module } from "../application";
 
 export default () =>
 	module("plantoid", ({ plantoid, selectPlantByIndex }) => {
-		const { selectedPlantIndex } = plantoid;
-		return module("menu", ({ menu }) => (
+		const { selectedPlantIndex, isMenuOpened } = plantoid;
+		return (
 			<div className="actions">
 				<div
 					className="action ion-ios-arrow-back"
 					onClick={() =>
-						!menu.isOpen &&
+						!isMenuOpened &&
 						selectPlantByIndex(selectedPlantIndex - 1)
 					}
 				/>
 				<div
 					className="action ion-ios-arrow-forward"
 					onClick={() =>
-						!menu.isOpen &&
+						!isMenuOpened &&
 						selectPlantByIndex(selectedPlantIndex + 1)
 					}
 				/>
@@ -41,5 +41,5 @@ export default () =>
 					}
 				`}</style>
 			</div>
-		));
+		);
 	});

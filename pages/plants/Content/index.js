@@ -155,7 +155,7 @@ class Content extends Component {
 							min-width: 24rem;
 						}
 					}
-					@media (min-width: 80rem) {
+					@media (min-width: 90rem) and (min-height: 56.25rem) {
 						.to_left {
 							padding-top: 8rem;
 						}
@@ -173,7 +173,7 @@ class Content extends Component {
 							min-width: 30rem;
 						}
 					}
-					@media (min-width: 90rem) {
+					@media (min-width: 105rem) {
 						.to_left {
 							flex-basis: 50%;
 						}

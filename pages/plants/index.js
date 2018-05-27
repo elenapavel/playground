@@ -1,76 +1,61 @@
-import Plantoid from "./Plantoid";
+import Head from "next/head";
 import Application, { module } from "./application";
+import Plantoid from "./Plantoid";
 import Menu from "./Menu";
+import $ from "./style.css";
 
 export default () => (
-	<Application>
-		{module("menu", ({ menu, toggleMenu }) => {
-			const { isOpen, items, selectedIndex } = menu;
-			const styleIn = {
-				opacity: 0.5,
-				transform: "translateX(-16rem)",
-			};
-			const styleOut = {
-				opacity: 1,
-				transform: "translateX(0%)",
-			};
-			return (
-				<div className="container">
-					<div
-						className="content"
-						style={isOpen ? styleIn : styleOut}
-					>
-						<Plantoid />
-					</div>
-					<div
-						className="menu ion-navicon"
-						onClick={() => toggleMenu()}
-					/>
-					<Menu />
-					<style jsx>{`
-						.container {
-							position: relative;
-							font-family: "Lato", sans-serif;
-							line-height: 1.4;
-							overflow-x: hidden;
-							overflow-y: auto;
-						}
-						.content {
-							transition: all 0.5s ease-in-out;
-						}
-						.menu {
-							position: absolute;
-							right: 0.8rem;
-							width: 4rem;
-							top: 0.5rem;
-							z-index: 10;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							font-size: 3rem;
-							line-height: 1;
-							cursor: pointer;
-						}
-						@media (min-width: 30rem) {
-							.menu {
-								right: 2.5rem;
-							}
-						}
-						@media (min-width: 64rem) {
-							:global(body) {
-								overflow-y: hidden;
-							}
-						}
-						@media (min-width: 80rem) {
-							.menu {
-								right: 0;
-								width: 8rem;
-								top: 3rem;
-							}
-						}
-					`}</style>
-				</div>
-			);
-		})}
-	</Application>
+	<div className={$.application}>
+		<Head>
+			<link
+				rel="stylesheet"
+				href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+			/>
+			<link
+				href="https://fonts.googleapis.com/css?family=Lato:400,900"
+				rel="stylesheet"
+			/>
+		</Head>
+		<Application>
+			{module(
+				"plantoid",
+				({ plantoid, toggleMenu, selectPlantByIndex }) => {
+					const {
+						isMenuOpened,
+						plants,
+						selectedPlantIndex,
+					} = plantoid;
+					const styleIn = {
+						opacity: 0.5,
+						transform: "translateX(-16rem)",
+					};
+					const styleOut = {
+						opacity: 1,
+						transform: "translateX(0%)",
+					};
+					const menuClasses = `${$.menu} ion-navicon`;
+					return (
+						<div>
+							<div
+								className={$.content}
+								style={isMenuOpened ? styleIn : styleOut}
+							>
+								<Plantoid />
+							</div>
+							<div
+								className={menuClasses}
+								onClick={() => toggleMenu()}
+							/>
+							<Menu
+								isOpen={isMenuOpened}
+								items={plants}
+								selectedIndex={selectedPlantIndex}
+								onSelect={index => selectPlantByIndex(index)}
+							/>
+						</div>
+					);
+				}
+			)}
+		</Application>
+	</div>
 );
