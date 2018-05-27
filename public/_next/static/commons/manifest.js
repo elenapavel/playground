@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8e47b3746413f40bf790"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2ea5857683e99cb5d117"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","6":"bundles/pages/index.js","7":"bundles/pages/plants.js"}[chunkId]||chunkId) + "-" + {"0":"f9897f17d365985cb4fe","1":"45d99e9a4035b8e19218","2":"99988b845fbb92323b21","3":"623caac567f9b1515e77","6":"6ae653349c4a8121bb18","7":"98c1097f4d3d9428726c"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/plants.js","6":"bundles/pages/books.js","7":"bundles/pages/architecture.js"}[chunkId]||chunkId) + "-" + {"0":"319a09dad8bcd85fdd77","1":"45d99e9a4035b8e19218","2":"99988b845fbb92323b21","3":"623caac567f9b1515e77","5":"30fa1ca82a95bce914b3","6":"9dafb6033a7c64ab8ecf","7":"048d8000ed661a171b78"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
