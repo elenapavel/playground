@@ -6,3 +6,12 @@
 	height: 100vh;
 	overflow: auto;
 }
+.events_list {
+	max-width: 50rem;
+	margin: auto;
+	padding: 3rem;
+}
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+}

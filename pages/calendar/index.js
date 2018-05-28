@@ -66,32 +66,42 @@ const SpecialDay = ({ date }) => (
 	</div>
 );
 
-const DisplaySpecialDay = ({ date }) => (
-	<div>
-		{specialDates.map((specialDate, key) => {
-			if (isSameDay(date, new Date(specialDate.date))) {
-				return (
-					<div
-						key={key}
-						style={{
-							color: `${
-								specialDate.type == "holiday"
-									? "red"
-									: specialDate.type == "event"
-										? "green"
-										: specialDate.type == "reminder"
-											? "orange"
-											: "transparent"
-							}`,
-						}}
-					>
-						{specialDate.name}
-					</div>
-				);
-			}
-		})}
-	</div>
-);
+const DisplaySpecialDay = ({ date, title }) => {
+	let hasEvents = false;
+	specialDates.map((specialDate, key) => {
+		if (isSameDay(date, new Date(specialDate.date))) {
+			hasEvents = true;
+		}
+	});
+	return (
+		<div>
+			{hasEvents ? <div className={$.title}>{title}</div> : null}
+			{specialDates.map((specialDate, key) => {
+				if (isSameDay(date, new Date(specialDate.date))) {
+					return (
+						<div
+							key={key}
+							style={{
+								color: `${
+									specialDate.type == "holiday"
+										? "red"
+										: specialDate.type == "event"
+											? "green"
+											: specialDate.type == "reminder"
+												? "orange"
+												: "transparent"
+								}`,
+								fontWeight: "bold",
+							}}
+						>
+							{specialDate.name}
+						</div>
+					);
+				}
+			})}
+		</div>
+	);
+};
 
 class Application extends Component {
 	constructor(props) {
@@ -177,7 +187,9 @@ class Application extends Component {
 					onChange={this.onSelect}
 					onRender={this.onRender}
 				/>
-				<DisplaySpecialDay date={date} />
+				<div className={$.events_list}>
+					<DisplaySpecialDay date={date} title="Events" />
+				</div>
 			</div>
 		);
 	}
