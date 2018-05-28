@@ -9,7 +9,10 @@ export default ({ date, type, onSelect, onRender }) => {
 	const styles = {
 		backgroundColor: isWeekendDay ? "rgba(0,0,0,0.1)" : "transparent",
 	};
-	const onClick = () => onSelect(date, dayOfMonth, type);
+	const onClick = () =>
+		typeof onSelect === "function"
+			? onSelect(date, dayOfMonth, type)
+			: null;
 
 	if (typeof onRender === "function") {
 		var content = onRender({ date, type, dayOfMonth });

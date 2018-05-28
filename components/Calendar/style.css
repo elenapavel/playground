@@ -14,17 +14,31 @@
 	color: var(--text_color);
 	background: var(--bg_color);
 }
+.months {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: 1px solid var(--border_color);
+}
+.month {
+	flex-basis: calc(100% / 3);
+	font-size: 0.2rem;
+	margin-top: 1rem;
+}
+.month .label {
+	font-size: 2em;
+}
 .header {
 	position: relative;
 	width: 100%;
-	border: 2px solid var(--border_color);
+	border: 0.125em solid var(--border_color);
 	display: flex;
 	justify-content: space-between;
 }
 .arrow {
 	cursor: pointer;
 	font-weight: bold;
-	padding: 0.75rem 1rem;
+	padding: 0.75em 1em;
 	position: relative;
 	z-index: 10;
 	transition: padding 0.3s ease-in-out;
@@ -42,7 +56,7 @@
 	align-items: center;
 	justify-content: center;
 	font-weight: 700;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 }
 .grid {
 	display: flex;
@@ -56,17 +70,18 @@
 }
 
 .day {
+	font-size: 1em;
 	cursor: pointer;
-	width: calc(100% + 2px);
-	border: 2px solid var(--border_color);
+	width: calc(100% + 0.125em);
+	border: 0.125em solid var(--border_color);
 	margin: -1px;
 	transition: border-color 0.3s ease-in-out;
 	font-weight: bold;
-	padding: 0.75rem;
+	padding: 0.75em;
 	word-wrap: break-word;
 	text-align: center;
 	transition: padding 0.3s ease-in-out;
-	height: calc(100% + 2px);
+	height: calc(100% + 0.125em);
 	position: relative;
 }
 .day_default {
@@ -91,6 +106,11 @@
 }
 @media (min-width: 30.01rem) {
 	.arrow {
-		padding: 2rem 1.5rem;
+		padding: 2em 1.5em;
+	}
+}
+@media (min-width: 40.01rem) {
+	.month {
+		flex-basis: 25%;
 	}
 }
