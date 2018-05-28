@@ -13,27 +13,27 @@ const specialDates = [
 	{
 		type: "holiday",
 		date: "2018-05-21",
-		name: "elena",
+		name: "holiday 1",
 	},
 	{
 		type: "holiday",
 		date: "2018-06-21",
-		name: "test",
+		name: "holiday 2",
 	},
 	{
 		type: "event",
 		date: "2018-05-29",
-		name: "event",
+		name: "event 1",
 	},
 	{
 		type: "event",
 		date: "2018-05-21",
-		name: "event",
+		name: "event 2",
 	},
 	{
 		type: "reminder",
 		date: "2018-05-21",
-		name: "next",
+		name: "reminder 1",
 	},
 ];
 
