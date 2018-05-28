@@ -7,7 +7,7 @@ import $ from "./style.css";
 
 class ArticleImage extends PureComponent {
 	state = {
-		isMobileView: 0,
+		isMobileView: 0
 	};
 
 	componentDidMount() {
@@ -41,13 +41,13 @@ class ArticleImage extends PureComponent {
 									height: "100%",
 									position: "absolute",
 									width: "100%",
-									...styles,
+									...styles
 								}}
 							>
 								<div
 									className={$.image}
 									style={{
-										backgroundImage: `url("${image}")`,
+										backgroundImage: `url("${image}")`
 									}}
 								/>
 							</animated.div>
@@ -74,22 +74,22 @@ class ArticleImage extends PureComponent {
 									config={{
 										delay: 250,
 										duration: 150,
-										easing: Easing.in,
+										easing: Easing.in
 									}}
 									from={{
 										opacity: "0",
-										transform: "translateY(3rem)",
+										transform: "translateY(3rem)"
 									}}
 									to={{
 										opacity: "1",
-										transform: "translateY(0)",
+										transform: "translateY(0)"
 									}}
 									reset
 								>
 									{styles => (
 										<div
 											style={{
-												...styles,
+												...styles
 											}}
 											className={$.image_title}
 										>
@@ -102,22 +102,22 @@ class ArticleImage extends PureComponent {
 									config={{
 										delay: 400,
 										duration: 150,
-										easing: Easing.in,
+										easing: Easing.in
 									}}
 									from={{
 										opacity: "0",
-										transform: "translateY(3rem)",
+										transform: "translateY(3rem)"
 									}}
 									to={{
 										opacity: "1",
-										transform: "translateY(0)",
+										transform: "translateY(0)"
 									}}
 									reset
 								>
 									{styles => (
 										<div
 											style={{
-												...styles,
+												...styles
 											}}
 											className={$.image_content}
 										>
@@ -129,7 +129,6 @@ class ArticleImage extends PureComponent {
 						</div>
 					)}
 				</Spring>
-				<style jsx>{``}</style>
 			</div>
 		);
 	}

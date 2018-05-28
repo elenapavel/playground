@@ -10,9 +10,9 @@ class TestimonialsAuthors extends Component {
 		const testimonialAuthorAvatarActiveClasses = `${
 			$.testimonial_author_avatar
 		} ${$.testimonial_author_avatar_active}`;
-		const testimonialAuthorNameActiveClasses = `${
-			$.testimonial_author_name
-		} ${$.testimonial_author_name_active}`;
+		const testimonialAuthorNameActiveClasses = `${$.testimonial_author_name} ${
+			$.testimonial_author_name_active
+		}`;
 
 		return (
 			<div className={$.testimonial_authors_container}>
@@ -36,7 +36,6 @@ class TestimonialsAuthors extends Component {
 					<div className={$.testimonial_author_avatar} />
 					<div className={$.testimonial_author_name} />
 				</div>
-				<style jsx>{``}</style>
 			</div>
 		);
 	}

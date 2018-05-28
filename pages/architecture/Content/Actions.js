@@ -13,9 +13,7 @@ class Actions extends Component {
 					{selectedArticleIndex == 0 ? null : (
 						<div
 							className={$.action}
-							onClick={() =>
-								selectArticleIndex(selectedArticleIndex - 1)
-							}
+							onClick={() => selectArticleIndex(selectedArticleIndex - 1)}
 						>
 							Previous
 						</div>
@@ -23,14 +21,11 @@ class Actions extends Component {
 					{selectedArticleIndex == articles.length - 1 ? null : (
 						<div
 							className={$.action}
-							onClick={() =>
-								selectArticleIndex(selectedArticleIndex + 1)
-							}
+							onClick={() => selectArticleIndex(selectedArticleIndex + 1)}
 						>
 							Next
 						</div>
 					)}
-					<style jsx>{``}</style>
 				</div>
 			);
 		});

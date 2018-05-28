@@ -25,16 +25,14 @@ class LandingPage extends Component {
 				<div className={$.items}>
 					{data.nav.map((item, key) => {
 						const itemClasses =
-							hoveredItemIndex == key
-								? $.item_link_hovered
-								: $.item_link;
+							hoveredItemIndex == key ? $.item_link_hovered : $.item_link;
 
 						return (
 							<div key={key} className={$.item}>
 								<div
 									className={$.item_image}
 									style={{
-										backgroundImage: `url(${item.image})`,
+										backgroundImage: `url(${item.image})`
 									}}
 								/>
 								<div

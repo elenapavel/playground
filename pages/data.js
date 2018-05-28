@@ -1,36 +1,36 @@
-import { STATIC } from "~/playground";
+import { STATIC, BASE } from "~/playground";
 
 export default {
 	nav: [
 		{
 			image: STATIC + "/screenshots/architecture.png",
 			title: "Architecture",
-			link: "/architecture",
+			link: `${BASE}/architecture`
 		},
 		{
 			image: STATIC + "/screenshots/plants.png",
 			title: "Plants",
-			link: "/plants",
+			link: `${BASE}/plants`
 		},
 		{
 			image: STATIC + "/screenshots/books.png",
 			title: "Books",
-			link: "/books",
+			link: `${BASE}/books`
 		},
 		{
 			image: STATIC + "/screenshots/universe-facts.png",
 			title: "Universe Facts",
-			link: "/universe-facts",
+			link: `${BASE}/universe-facts`
 		},
 		{
 			image: STATIC + "/screenshots/calendar.png",
 			title: "Calendar",
-			link: "/calendar",
+			link: `${BASE}/calendar`
 		},
 		{
 			image: STATIC + "/screenshots/react-wireframe.png",
 			title: "React Wireframe",
-			link: "/react-wireframe",
-		},
-	],
+			link: `${BASE}/react-wireframe`
+		}
+	]
 };

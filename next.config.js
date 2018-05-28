@@ -6,6 +6,7 @@ const publicURL = isProduction
 	? `https://elenapavel.github.io/${repository}`
 	: "";
 const staticURL = isProduction ? `${publicURL}/static` : "/static";
+const base = isProduction ? "/playground" : "";
 
 const routes = {
 	"/": { page: "/" },
@@ -14,14 +15,15 @@ const routes = {
 	"/architecture": { page: "/architecture" },
 	"/calendar": { page: "/calendar" },
 	"/universe-facts": { page: "/universe-facts" },
-	"/react-wireframe": { page: "/react-wireframe" },
+	"/react-wireframe": { page: "/react-wireframe" }
 };
 
 const config = {
 	assetPrefix: publicURL,
 	publicRuntimeConfig: {
-		publicURL,
-		staticURL,
+		url: publicURL,
+		static: staticURL,
+		base: base
 	},
 	exportPathMap: () => routes,
 	webpack(config, options) {
@@ -29,18 +31,18 @@ const config = {
 		config.output.publicPath = isProduction ? `/${repository}` : "/";
 
 		return config;
-	},
+	}
 };
 
 const cssModules = {
 	cssModules: true,
 	cssLoaderOptions: {
 		importLoaders: 1,
-		localIdentName: "[local]_[hash:base64:5]",
-	},
+		localIdentName: "[local]_[hash:base64:5]"
+	}
 };
 
 module.exports = withCSS({
 	...cssModules,
-	...config,
+	...config
 });
