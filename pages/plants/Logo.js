@@ -15,7 +15,7 @@ class LeftSide extends Component {
 					.logo {
 						position: absolute;
 						top: 1.5rem;
-						left: 0rem;
+						left: 2rem;
 						z-index: 10;
 					}
 					.logo img {

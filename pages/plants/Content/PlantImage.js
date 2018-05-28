@@ -161,8 +161,8 @@ class PlantImage extends PureComponent {
 						}
 						.container:before,
 						.container:after {
-							top: 2rem;
-							right: 2rem;
+							top: 4rem;
+							right: 4rem;
 						}
 						.index {
 							bottom: -2.5rem;
