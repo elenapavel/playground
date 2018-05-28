@@ -11,6 +11,8 @@
 	position: relative;
 	max-width: 50rem;
 	margin: auto;
+	color: var(--text_color);
+	background: var(--bg_color);
 }
 .header {
 	position: relative;
