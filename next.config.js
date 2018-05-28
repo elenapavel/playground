@@ -14,7 +14,7 @@ const routes = {
 	"/architecture": { page: "/architecture" },
 	"/calendar": { page: "/calendar" },
 	"/universe-facts": { page: "/universe-facts" },
-	"/responsive-layout": { page: "/react-wireframe" },
+	"/react-wireframe": { page: "/react-wireframe" },
 };
 
 const config = {
