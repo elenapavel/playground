@@ -14,7 +14,7 @@ export default {
 					category: "Palms",
 					species: "20 species",
 					image:
-						"http://bugrahome.com/wp-content/uploads/2017/05/ravenea-potted-plant-majesty-palm-in-the-corner-plants-and-wonderful-ikea-tree-images-.jpg",
+						"https://bugrahome.com/wp-content/uploads/2017/05/ravenea-potted-plant-majesty-palm-in-the-corner-plants-and-wonderful-ikea-tree-images-.jpg",
 				},
 				{
 					scientificName: "Chamaedorea elegans",
