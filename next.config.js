@@ -12,16 +12,16 @@ const routes = {
 	"/books": { page: "/books" },
 	"/plants": { page: "/plants" },
 	"/architecture": { page: "/architecture" },
+	"/calendar": { page: "/calendar" },
 	"/universe-facts": { page: "/universe-facts" },
-	"/responsive-layout": { page: "/responsive-layout" },
-	"/grid": { page: "/grid" }
+	"/responsive-layout": { page: "/react-wireframe" },
 };
 
 const config = {
 	assetPrefix: publicURL,
 	publicRuntimeConfig: {
 		publicURL,
-		staticURL
+		staticURL,
 	},
 	exportPathMap: () => routes,
 	webpack(config, options) {
@@ -29,18 +29,18 @@ const config = {
 		config.output.publicPath = isProduction ? `/${repository}` : "/";
 
 		return config;
-	}
+	},
 };
 
 const cssModules = {
 	cssModules: true,
 	cssLoaderOptions: {
 		importLoaders: 1,
-		localIdentName: "[local]_[hash:base64:5]"
-	}
+		localIdentName: "[local]_[hash:base64:5]",
+	},
 };
 
 module.exports = withCSS({
 	...cssModules,
-	...config
+	...config,
 });

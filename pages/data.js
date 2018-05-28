@@ -1,4 +1,4 @@
-import { STATIC, URL } from "~/playground";
+import { STATIC } from "~/playground";
 
 export default {
 	nav: [
