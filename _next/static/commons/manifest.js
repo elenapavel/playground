@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9f5019a358d7c25f0200"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cb77e4cfacb05e277979"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","7":"bundles/pages/calendar.js"}[chunkId]||chunkId) + "-" + {"0":"ae13fc35d23b1a001864","1":"45d99e9a4035b8e19218","2":"99988b845fbb92323b21","3":"623caac567f9b1515e77","7":"8557bcb4da350340a247"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/svg.js","6":"bundles/pages/calendar.js"}[chunkId]||chunkId) + "-" + {"0":"1e0c749cbccfb1a4e020","1":"45d99e9a4035b8e19218","2":"99988b845fbb92323b21","3":"623caac567f9b1515e77","5":"5227f36cced55f49c202","6":"9014dafa5376e3a6ac6a"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
