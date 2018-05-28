@@ -1,10 +1,10 @@
-import { Component, cloneElement } from "react";
+import { PureComponent, cloneElement } from "react";
 
 import isSameDay from "date-fns/is_same_day";
 import isWeekend from "date-fns/is_weekend";
 
 import Head from "next/head";
-import Tabs from "./Tabs";
+import Tabs from "~/components/Tabs";
 import Calendar from "~/components/Calendar";
 
 import $ from "./style.css";
@@ -37,7 +37,7 @@ const specialDates = [
 	},
 ];
 
-const viewTabs = ["year", "month"];
+const viewTabs = ["YEAR", "MONTH"];
 
 const SpecialDay = ({ date }) => (
 	<div>
@@ -103,7 +103,7 @@ const DisplaySpecialDay = ({ date, title }) => {
 	);
 };
 
-class Application extends Component {
+class Application extends PureComponent {
 	constructor(props) {
 		super();
 		this.state = {
@@ -167,8 +167,9 @@ class Application extends Component {
 		this.setState({ date: date });
 	};
 
-	onChangeViewByIndex(viewIndex) {
-		this.setState({ view: viewTabs[viewIndex] });
+	onChangeViewByLabel(label) {
+		this.setState({ view: label });
+		console.log(label);
 	}
 
 	render() {
@@ -176,14 +177,22 @@ class Application extends Component {
 
 		return (
 			<div>
-				{/*<Tabs
-					items={viewTabs}
-					active="1"
-					onChangeViewByIndex={view => this.onChangeViewByIndex(view)}
-				/>*/}
+				<div className={$.tabs}>
+					<Tabs
+						items={viewTabs}
+						containerBackground="#f9f9f9"
+						active="1"
+						onChange={label => this.onChangeViewByLabel(label)}
+					/>
+				</div>
 				<Calendar
 					date={date}
 					view={view}
+					onChangeView={
+						view.toLowerCase() == "year"
+							? () => this.onChangeViewByLabel("month")
+							: ""
+					}
 					onChange={this.onSelect}
 					onRender={this.onRender}
 				/>
