@@ -5,7 +5,6 @@ import Features from "./Features";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Team from "./Team";
-import Slider from "./Slider";
 import $ from "./style.css";
 
 export default () => (
@@ -20,12 +19,11 @@ export default () => (
 				href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
 			/>
 		</Head>
-		{/*<Header />
+		<Header />
 		<Content />
 		<Features />
 		<Portfolio />
 		<Blog />
-		<Team />*/}
-		<Slider />
+		<Team />
 	</b>
 );
