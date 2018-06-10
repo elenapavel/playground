@@ -7,35 +7,35 @@ import $ from "./style.css";
 
 const items = [
 	{
-		link: BASE + "/test",
-		name: "test lorem ipsum",
+		link: BASE + "/",
+		name: "Item 1",
 	},
 	{
-		link: BASE + "/home",
-		name: "homepage",
+		link: BASE + "/",
+		name: "Item 2",
 	},
 	{
-		link: BASE + "/test",
-		name: "test lorem",
+		link: BASE + "/",
+		name: "Item 3",
 	},
 	{
-		link: BASE + "/home",
-		name: "homepage",
+		link: BASE + "/",
+		name: "Item 4",
 	},
 ];
 
 const accountMenuItems = [
 	{
-		link: "/test",
-		name: "test",
+		link: BASE + "/",
+		name: "Account Item 1",
 	},
 	{
-		link: "/my-account",
-		name: "my account",
+		link: BASE + "/",
+		name: "Account Item 2",
 	},
 	{
-		link: "/settings",
-		name: "settings",
+		link: BASE + "/",
+		name: "Account Item 3",
 	},
 ];
 

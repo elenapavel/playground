@@ -21,11 +21,6 @@
 .promo_section > :first-child {
 	margin-top: 0;
 }
-.promo_title {
-	font-size: 1.5em;
-	font-weight: bold;
-	transition: font-size 0.3s ease-in-out;
-}
 .promo_headline {
 	width: 100%;
 	margin-left: auto;
@@ -66,9 +61,6 @@
 	.promo_section {
 		padding: 3em 7em;
 	}
-	.promo_title {
-		font-size: 2em;
-	}
 	.promo_headline {
 		width: 80%;
 	}
@@ -82,9 +74,6 @@
 	}
 	.promo_section > * {
 		margin-top: 2em;
-	}
-	.promo_title {
-		font-size: 3em;
 	}
 	.promo_headline {
 		width: 70%;
