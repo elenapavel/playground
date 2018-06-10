@@ -15,7 +15,8 @@ const routes = {
 	"/architecture": { page: "/architecture" },
 	"/calendar": { page: "/calendar" },
 	"/universe-facts": { page: "/universe-facts" },
-	"/react-wireframe": { page: "/react-wireframe" }
+	"/react-wireframe": { page: "/react-wireframe" },
+	"/structure": { page: "/structure" },
 };
 
 const config = {
@@ -23,7 +24,7 @@ const config = {
 	publicRuntimeConfig: {
 		url: publicURL,
 		static: staticURL,
-		base: base
+		base: base,
 	},
 	exportPathMap: () => routes,
 	webpack(config, options) {
@@ -31,18 +32,18 @@ const config = {
 		config.output.publicPath = isProduction ? `/${repository}` : "/";
 
 		return config;
-	}
+	},
 };
 
 const cssModules = {
 	cssModules: true,
 	cssLoaderOptions: {
 		importLoaders: 1,
-		localIdentName: "[local]_[hash:base64:5]"
-	}
+		localIdentName: "[local]_[hash:base64:5]",
+	},
 };
 
 module.exports = withCSS({
 	...cssModules,
-	...config
+	...config,
 });

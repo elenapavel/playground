@@ -73,4 +73,12 @@
 	.headline {
 		font-size: 0.8em;
 	}
+	.title {
+		max-height: 4.2em;
+	}
+}
+@media (min-width: 64rem) {
+	.title {
+		max-height: 5.04em;
+	}
 }

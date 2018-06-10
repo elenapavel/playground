@@ -105,9 +105,12 @@
 	.article_featured {
 		display: flex;
 	}
+	.article_featured .title {
+		max-height: 4.2em;
+	}
 	.title {
 		-webkit-line-clamp: 2;
-		max-height: 3.36em;
+		max-height: 4.2em;
 	}
 	.headline {
 		-webkit-line-clamp: 2;
@@ -115,6 +118,14 @@
 	}
 	.content {
 		margin-top: 1em;
+	}
+}
+@media (min-width: 64rem) {
+	.title {
+		max-height: 5.04em;
+	}
+	.article_featured .title {
+		max-height: 5.04em;
 	}
 }
 @media (min-width: 75rem) {
