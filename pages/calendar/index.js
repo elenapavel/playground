@@ -169,7 +169,6 @@ class Application extends PureComponent {
 
 	onChangeViewByLabel(label) {
 		this.setState({ view: label });
-		console.log(label);
 	}
 
 	render() {

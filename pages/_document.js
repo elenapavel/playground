@@ -17,19 +17,48 @@ export default class MyDocument extends Document {
 
 					<title>Elena's playground</title>
 
+					<link
+						rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
+					/>
+
 					<style>{`
 						html {
 							box-sizing: border-box;
 						}
 						*, *:before, *:after {
 							box-sizing: inherit;
+							background-color: inherit;
+						}
+						b{
+							display: block;
+							font-weight: normal;
+						}
+						i{
+							display: inline-block;
+							font-style: normal;
+						}
+						a{
+						    text-decoration: inherit;
+    						color: inherit;
+						}
+						input{
+							color: inherit;
+						}
+						input::placeholder{
+							color: inherit;
+						}
+						textarea{
+							color: inherit;
+							width: 100%;
+							min-width: 100%;
+							max-width: 100%;
+						}
+						textarea::placeholder{
+							color: inherit;
 						}
 					`}</style>
 
-					<link
-						rel="stylesheet"
-						href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
-					/>
 					<link rel="stylesheet" href={stylesheet} />
 
 					<script src="https://cdn.polyfill.io/v2/polyfill.min.js" />

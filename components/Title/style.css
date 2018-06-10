@@ -1,0 +1,15 @@
+.title {
+	font-size: 1.2em;
+	font-weight: bold;
+	transition: font-size 0.3s ease-in-out;
+}
+@media (min-width: 48rem) {
+	.title {
+		font-size: 1.5em;
+	}
+}
+@media (min-width: 64rem) {
+	.title {
+		font-size: 1.8rem;
+	}
+}

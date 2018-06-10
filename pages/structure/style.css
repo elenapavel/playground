@@ -1,0 +1,36 @@
+:root {
+	--text_color_primary: #437dc4;
+	--text_color_secondary: #cae0fa;
+	--text_color_accent: #5ba0f0;
+	--text_color_error: #ec7575;
+	--background_color: #fff;
+	--background_color_accent: #e6f0fc;
+	--font_primary: "Cormorant", serif;
+	--font_accent: "Montserrat", sans-serif;
+	--text_size: 1rem;
+	--button_size: 1.1em;
+	--subheading: 1.4em;
+	--heading_size: 3em;
+	--container_margin: 0;
+}
+@media (min-width: 48rem) {
+	:root {
+		--container_margin: 3em;
+	}
+}
+@media (min-width: 80rem) {
+	:root {
+		--container_margin: 10em;
+	}
+}
+.application {
+	height: 100vh;
+	overflow-y: auto;
+	font-family: var(--font_primary);
+	color: var(--text_color_primary);
+	background: var(--background_color);
+	font-size: var(--text_size);
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: 0.5px;
+}
