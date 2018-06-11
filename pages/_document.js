@@ -28,7 +28,6 @@ export default class MyDocument extends Document {
 						}
 						*, *:before, *:after {
 							box-sizing: inherit;
-							background-color: inherit;
 						}
 						b{
 							display: block;

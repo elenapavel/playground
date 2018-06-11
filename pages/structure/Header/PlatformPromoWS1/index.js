@@ -34,8 +34,6 @@ class PlatformPromo extends Component {
 		refsKeys.forEach(ref => {
 			values.push({ ref: ref, value: refs[ref].value });
 		});
-
-		console.log(values);
 	}
 
 	render() {
