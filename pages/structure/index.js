@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Header from "./Header";
 import Content from "./Content";
+import Grid from "./Grid";
 import Features from "./Features";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Team from "./Team";
+import Ecommerce from "./Ecommerce";
+import Pricing from "./Pricing";
+import CTA from "./CTA";
 import $ from "./style.css";
 
 export default () => (
@@ -21,9 +25,13 @@ export default () => (
 		</Head>
 		<Header />
 		<Content />
+		<Grid />
 		<Features />
 		<Portfolio />
 		<Blog />
 		<Team />
+		<Ecommerce />
+		<Pricing />
+		<CTA />
 	</b>
 );

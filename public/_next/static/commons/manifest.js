@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "eb322d18dfc5c0820309"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ec3bb76bb2c4d149ba19"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/books.js","6":"bundles/pages/structure.js","7":"bundles/pages/universe-facts.js","8":"bundles/pages/plants.js"}[chunkId]||chunkId) + "-" + {"0":"25bc8e60a4c220ba8c1e","1":"241968e71d03ce66a1e3","2":"99988b845fbb92323b21","3":"623caac567f9b1515e77","5":"6ed0e9ab73e47887bc91","6":"a08429b818a89aaa96dd","7":"7c37bbd26babd77b73e9","8":"cabf59e7a0af7dec9b87"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","6":"bundles/pages/switch.js","7":"bundles/pages/structure.js"}[chunkId]||chunkId) + "-" + {"0":"975e2e2d43f69853088e","1":"241968e71d03ce66a1e3","2":"99988b845fbb92323b21","3":"623caac567f9b1515e77","6":"f03d556853208dd4e0ee","7":"7dcbc1ac6ea194a378ee"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {

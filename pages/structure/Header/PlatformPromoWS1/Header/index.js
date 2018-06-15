@@ -8,20 +8,20 @@ import $ from "./style.css";
 
 const items = [
 	{
-		link: BASE + "/test",
-		name: "test lorem ipsum",
+		link: BASE + "#",
+		name: "Menu one",
 	},
 	{
-		link: BASE + "/home",
-		name: "homepage",
+		link: BASE + "#",
+		name: "Menu two",
 	},
 	{
-		link: BASE + "/test",
-		name: "test lorem",
+		link: BASE + "#",
+		name: "Menu three",
 	},
 	{
-		link: BASE + "/home",
-		name: "homepage",
+		link: BASE + "#",
+		name: "Menu four",
 	},
 ];
 

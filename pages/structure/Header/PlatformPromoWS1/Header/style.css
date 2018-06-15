@@ -51,6 +51,8 @@
 @media (min-width: 48rem) {
 	.search_collapsed {
 		flex-basis: 100%;
+	}
+	.search_expanded {
 		z-index: 30;
 	}
 }

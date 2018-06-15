@@ -1,7 +1,7 @@
 import $ from "./style.css";
 
-export default () => (
-	<b className={$.register}>
-		<b className={$.register_button}>Register</b>
+export default ({ text, onSelect }) => (
+	<b className={$.register} onClick={() => onSelect()}>
+		{text || "Register"}
 	</b>
 );

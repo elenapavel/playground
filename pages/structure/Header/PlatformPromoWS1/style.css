@@ -14,12 +14,9 @@
 	text-align: center;
 	transition: padding 0.3s ease-in-out;
 }
-.promo_section > * {
+.promo_section > *:not(:first-child) {
 	margin-top: 1em;
 	transition: margin 0.3s ease-in-out;
-}
-.promo_section > :first-child {
-	margin-top: 0;
 }
 .promo_headline {
 	width: 100%;
