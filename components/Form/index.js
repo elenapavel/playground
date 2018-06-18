@@ -7,7 +7,7 @@ class Form extends Component {
 		this.props.onSubmit(this.refs);
 	}
 	render() {
-		const { fields, submitActionText } = this.props;
+		const { fields, submitActionText, submitActionBackground } = this.props;
 		return (
 			<b className={$.form}>
 				{fields.map((field, key) => {
@@ -16,9 +16,17 @@ class Form extends Component {
 						field.icon ? $.field_has_icon : $.field
 					}`;
 
-					if (field.type != null)
+					if (field.type != null && field.type != "textarea")
 						return (
-							<b key={key} className={fieldClasses}>
+							<b
+								key={key}
+								className={fieldClasses}
+								style={{
+									backgroundColor: field.background
+										? field.background
+										: null,
+								}}
+							>
 								{field.icon != null ? (
 									<b className={iconClasses} />
 								) : null}
@@ -31,7 +39,15 @@ class Form extends Component {
 						);
 					else
 						return (
-							<b key={key} className={fieldClasses}>
+							<b
+								key={key}
+								className={fieldClasses}
+								style={{
+									backgroundColor: field.background
+										? field.background
+										: null,
+								}}
+							>
 								{field.icon != null ? (
 									<b className={iconClasses} />
 								) : null}
@@ -42,10 +58,16 @@ class Form extends Component {
 							</b>
 						);
 				})}
-				<b className={$.submit_action} onClick={() => this.onSubmit()}>
-					<b className={$.submit_button}>
-						{submitActionText ? submitActionText : "Register"}
-					</b>
+				<b
+					className={$.submit_action}
+					onClick={() => this.onSubmit()}
+					style={{
+						backgroundColor: submitActionBackground
+							? submitActionBackground
+							: null,
+					}}
+				>
+					{submitActionText ? submitActionText : "Register"}
 				</b>
 			</b>
 		);

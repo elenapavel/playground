@@ -6,4 +6,5 @@
 	color: var(--background_color);
 	border-radius: 0.5em;
 	cursor: pointer;
+	text-align: center;
 }

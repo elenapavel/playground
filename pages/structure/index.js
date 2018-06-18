@@ -9,6 +9,8 @@ import Team from "./Team";
 import Ecommerce from "./Ecommerce";
 import Pricing from "./Pricing";
 import CTA from "./CTA";
+import Form from "./Form";
+import Contact from "./Contact";
 import $ from "./style.css";
 
 export default () => (
@@ -33,5 +35,7 @@ export default () => (
 		<Ecommerce />
 		<Pricing />
 		<CTA />
+		<Form />
+		<Contact />
 	</b>
 );

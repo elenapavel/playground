@@ -6,8 +6,8 @@
 .item {
 	font-size: 2em;
 }
-.item:not(:first-child) {
-	margin-left: 1em;
+.item:not(:last-child) {
+	margin-right: 1em;
 }
 .error {
 	composes: item;
