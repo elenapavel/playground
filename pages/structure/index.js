@@ -11,6 +11,7 @@ import Pricing from "./Pricing";
 import CTA from "./CTA";
 import Form from "./Form";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import $ from "./style.css";
 
 export default () => (
@@ -37,5 +38,6 @@ export default () => (
 		<CTA />
 		<Form />
 		<Contact />
+		<Footer />
 	</b>
 );
