@@ -1,3 +1,4 @@
+import React from "react";
 import CTAWS1 from "./CTAWS1";
 import CTAWS2 from "./CTAWS2";
 import CTAWS3 from "./CTAWS3";

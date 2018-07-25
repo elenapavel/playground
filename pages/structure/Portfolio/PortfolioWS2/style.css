@@ -15,6 +15,9 @@
 	max-width: 60rem;
 	margin: 2em auto 0;
 }
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
 @media (min-width: 48rem) {
 	.portfolio {
 		padding-top: 4em;

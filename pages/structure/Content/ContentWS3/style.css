@@ -31,24 +31,20 @@
 	flex-basis: 100%;
 	transition-property: flex-basis, margin, max-width;
 }
-.title {
-	font-size: 1.5em;
-	font-weight: bold;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+	padding: 0;
+	width: 100%;
+	text-align: left;
 }
-.headline {
+.description {
 	margin-top: 1em;
 }
 .register_action {
 	margin-top: 1em;
 }
 @media (min-width: 48rem) {
-	.title {
-		font-size: 2em;
-	}
-	.headline {
+	.description {
 		margin-top: 2em;
 	}
 	.register_action {
@@ -61,7 +57,7 @@
 @media (min-width: 64rem) {
 	.content {
 		justify-content: flex-end;
-		padding: 4em;
+		padding: 5em 2em;
 	}
 	.preview {
 		position: absolute;
@@ -77,8 +73,5 @@
 		padding: 4em;
 		margin: 0;
 		max-width: none;
-	}
-	.title {
-		font-size: 3em;
 	}
 }

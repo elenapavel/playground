@@ -36,12 +36,11 @@
 	transition-timing-function: ease-in-out;
 }
 .heading {
-	font-size: 1.2em;
+	composes: heading from "~/pages/structure/style.css";
+}
+.subheading {
+	composes: subheading from "~/pages/structure/style.css";
 	margin-top: 1rem;
-	font-weight: bold;
-	transition-property: font-size, margin;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
 }
 .paragraph {
 	margin-top: 1rem;
@@ -68,8 +67,7 @@
 		flex-basis: calc(50% - 1em);
 		margin: 0;
 	}
-	.heading {
-		font-size: 1.5em;
+	.subheading {
 		margin-top: 2rem;
 	}
 	.paragraph {
@@ -93,8 +91,5 @@
 		flex-basis: calc(50% - 4em);
 		max-width: 40rem;
 		margin: 0;
-	}
-	.heading {
-		font-size: 1.8em;
 	}
 }

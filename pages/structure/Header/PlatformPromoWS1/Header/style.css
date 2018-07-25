@@ -30,10 +30,12 @@
 }
 .search_collapsed {
 	position: relative;
+	z-index: auto;
 	background-color: inherit;
 }
 .search_expanded {
 	composes: search_collapsed;
+	z-index: 30;
 	position: absolute;
 	left: 0;
 	right: 0;

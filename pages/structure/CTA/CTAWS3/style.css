@@ -30,13 +30,12 @@
 	flex-basis: calc(100% - 4em);
 }
 .heading {
-	font-size: 1.2em;
-	font-weight: bold;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	composes: heading from "~/pages/structure/style.css";
+	padding: 0;
+	width: 100%;
+	text-align: left;
 }
-.subheading {
+.description {
 	margin-top: 1rem;
 	transition-property: font-size;
 	transition-duration: 0.3s;
@@ -104,10 +103,7 @@
 	.item:nth-child(2) {
 		margin-top: 0;
 	}
-	.heading {
-		font-size: 1.5em;
-	}
-	.subheading {
+	.description {
 		font-size: 1.2em;
 	}
 	.tagline {
@@ -117,8 +113,5 @@
 @media (min-width: 64rem) {
 	.section {
 		padding: 3em 5em;
-	}
-	.heading {
-		font-size: 1.8em;
 	}
 }

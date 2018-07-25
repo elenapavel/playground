@@ -1,6 +1,7 @@
 import { STATIC } from "~/playground";
 
 export default {
+	heading: "Section Title",
 	items: [
 		{
 			type: "member",
@@ -34,7 +35,7 @@ export default {
 		},
 		{
 			type: "register",
-			title: "Join the team",
+			heading: "Join the team",
 		},
 	],
 };

@@ -1,6 +1,6 @@
-import SectionTitle from "~/components/SectionTitle";
+import React from "react";
 import Article from "./Article";
-import items from "./data.js";
+import data from "./data";
 import $ from "./style.css";
 
 const components = {
@@ -8,11 +8,11 @@ const components = {
 	block: Article,
 };
 
-export default ({ title }) => (
+export default ({ heading }) => (
 	<b className={$.section}>
-		<SectionTitle title={title || "Section title"} />
+		<b className={$.heading}>{heading || data.heading}</b>
 		<b className={$.content}>
-			{items.map((item, key) => {
+			{data.items.map((item, key) => {
 				const Component = components[item.type];
 
 				if (item.type == "featured") {

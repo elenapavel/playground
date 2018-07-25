@@ -4,6 +4,11 @@
 	transition-property: padding;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
+	max-width: 80rem;
+	margin: auto;
+}
+.heading {
+	composes: heading from "~/pages/structure/style.css";
 }
 @media (min-width: 48rem) {
 	.section {

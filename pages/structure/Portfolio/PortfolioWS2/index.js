@@ -1,8 +1,7 @@
-import { Component } from "react";
-import Actions from "~/components/Actions";
-import SectionTitle from "~/components/SectionTitle";
-import data from "./data";
+import React, { Component } from "react";
+import Actions from "./Actions";
 import Gallery from "./Gallery";
+import data from "./data";
 import $ from "./style.css";
 
 class PortfolioWS2 extends Component {
@@ -15,15 +14,15 @@ class PortfolioWS2 extends Component {
 	}
 
 	render() {
-		const { title } = this.props;
+		const { heading } = this.props;
 		const { active } = this.state;
 
-		const items = Object.keys(data);
-		const contentActive = data[items[active]];
+		const items = Object.keys(data.items);
+		const shownItems = data.items[items[active]];
 
 		return (
 			<b className={$.portfolio}>
-				<SectionTitle title={title || "Section title"} />
+				<b className={$.heading}>{heading || data.heading}</b>
 				<b className={$.portfolio_actions}>
 					<Actions
 						items={items}
@@ -32,7 +31,7 @@ class PortfolioWS2 extends Component {
 					/>
 				</b>
 				<b className={$.portfolio_selected_content}>
-					<Gallery items={contentActive} shouldFit />
+					<Gallery items={shownItems} shouldFit />
 				</b>
 			</b>
 		);

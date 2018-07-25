@@ -1,5 +1,6 @@
-import { STATIC } from "~/playground";
-import Register from "~/components/Register";
+import React from "react";
+import Register from "./Register";
+import data from "./data";
 import $ from "./style.css";
 
 export default () => (
@@ -8,16 +9,12 @@ export default () => (
 			<b
 				className={$.preview}
 				style={{
-					backgroundImage: `url(${STATIC}/images/planets/Saturn.jpeg)`,
+					backgroundImage: `url(${data.preview})`,
 				}}
 			/>
 			<b className={$.card}>
-				<b className={$.title}>Section title</b>
-				<b className={$.headline}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Nulla imperdiet ante sed orci efficitur interdum quis eu
-					neque.
-				</b>
+				<b className={$.heading}>{data.heading}</b>
+				<b className={$.description}>{data.description}</b>
 				<i className={$.register_action}>
 					<Register />
 				</i>

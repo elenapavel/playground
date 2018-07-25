@@ -41,6 +41,9 @@
 	left: 0;
 	right: 0;
 }
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
 @media (min-width: 32.5rem) {
 	.featured {
 		padding-top: 75%;

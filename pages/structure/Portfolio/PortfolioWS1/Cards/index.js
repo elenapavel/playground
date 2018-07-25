@@ -1,20 +1,19 @@
 import Link from "next/link";
-import Title from "~/components/Title";
 import $ from "./style.css";
 
-export default ({ cards }) => (
-	<b className={$.cards}>
-		{cards.map((card, key) => (
-			<b className={$.card} key={key}>
-				<Link href={card.link}>
+export default ({ items }) => (
+	<b className={$.items}>
+		{items.map((item, key) => (
+			<b className={$.item} key={key}>
+				<Link href={item.link}>
 					<a>
 						<b
-							className={$.card_image}
-							style={{ backgroundImage: `url(${card.image})` }}
+							className={$.image}
+							style={{ backgroundImage: `url(${item.image})` }}
 						/>
-						<b className={$.card_content}>
-							<Title title={card.title} />
-							<b className={$.card_headline}>{card.headline}</b>
+						<b className={$.content}>
+							<b className={$.heading}>{item.heading}</b>
+							<b className={$.description}>{item.description}</b>
 						</b>
 					</a>
 				</Link>

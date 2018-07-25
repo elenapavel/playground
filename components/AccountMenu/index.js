@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { STATIC } from "~/playground";
 import Menu from "./Menu";
 import $ from "./style.css";

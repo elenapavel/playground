@@ -1,31 +1,10 @@
-import { Component } from "react";
-import Logo from "~/components/Logo";
-import Menu from "~/components/Menu";
-import Register from "~/components/Register";
-import Search from "~/components/Search";
-import { STATIC, BASE } from "~/playground";
+import React, { Component } from "react";
+import Logo from "./Logo";
+import Menu from "./Menu";
+import Register from "./Register";
+import Search from "./Search";
+import data from "./data";
 import $ from "./style.css";
-
-const items = [
-	{
-		link: BASE + "#",
-		name: "Menu one",
-	},
-	{
-		link: BASE + "#",
-		name: "Menu two",
-	},
-	{
-		link: BASE + "#",
-		name: "Menu three",
-	},
-	{
-		link: BASE + "#",
-		name: "Menu four",
-	},
-];
-
-const logoSrc = `${STATIC}/images/dropbox_logo.png`;
 
 class HeaderWS2 extends Component {
 	state = {
@@ -57,7 +36,7 @@ class HeaderWS2 extends Component {
 			<b className={$.platform_promo}>
 				<b className={$.header}>
 					<b className={$.logo}>
-						<Logo image={logoSrc} />
+						<Logo image={data.logo} />
 					</b>
 					<b className={$.to_right}>
 						<b className={searchClass}>
@@ -75,7 +54,7 @@ class HeaderWS2 extends Component {
 					<b className={$.menu}>
 						<Menu
 							isMenuOpened={isMenuOpened}
-							items={items}
+							items={data.items}
 							onChange={isMenuOpened =>
 								this.toggleMenu(isMenuOpened)
 							}

@@ -1,20 +1,16 @@
-import { STATIC } from "~/playground";
-import SectionTitle from "~/components/SectionTitle";
-import Register from "~/components/Register";
+import React from "react";
+import Register from "./Register";
 import Header from "./Header";
+import data from "./data";
 import $ from "./style.css";
 
-export default ({ title }) => (
+export default ({ heading }) => (
 	<b className={$.platform_promo}>
 		<Header />
 		<b className={$.promo_section}>
 			<b className={$.to_left}>
-				<b className={$.promo_title}>{title || "Section Title"}</b>
-				<b className={$.headline}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Nulla imperdiet ante sed orci efficitur interdum quis eu
-					neque.
-				</b>
+				<b className={$.heading}>{heading || data.heading}</b>
+				<b className={$.description}>{data.description}</b>
 				<i className={$.register_action}>
 					<Register />
 				</i>
@@ -23,7 +19,7 @@ export default ({ title }) => (
 				<b
 					className={$.preview}
 					style={{
-						backgroundImage: `url(${STATIC}/images/planets/Saturn.jpeg)`,
+						backgroundImage: `url(${data.preview})`,
 					}}
 				/>
 			</b>

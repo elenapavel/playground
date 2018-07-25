@@ -1,5 +1,6 @@
+import React from "react";
 import Link from "next/link";
-import Register from "~/components/Register";
+import Register from "./Register";
 import $ from "./style.css";
 
 export default ({ heading, subheading, link }) => (

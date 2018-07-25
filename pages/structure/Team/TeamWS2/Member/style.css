@@ -12,6 +12,7 @@
 	background-repeat: no-repeat;
 }
 .name {
+	composes: subheading from "~/pages/structure/style.css";
 	margin-top: 1rem;
 }
 .position {

@@ -1,6 +1,6 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import Link from "next/link";
-import Register from "~/components/Register";
+import Register from "./Register";
 import $ from "./style.css";
 
 class Product extends Component {

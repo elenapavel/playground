@@ -3,7 +3,7 @@
 	padding: 2em var(--container_margin);
 	transition: padding 0.3s ease-in-out;
 }
-.section_content {
+.content {
 	margin-top: 2em;
 	padding: 0 2em;
 	transition-property: padding, margin;
@@ -14,27 +14,30 @@
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
-.section_item {
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
+.item {
 	flex-basis: 100%;
 	max-width: 30rem;
 	margin: auto;
 	text-align: center;
 }
-.section_item:not(:first-child) {
+.item:not(:first-child) {
 	margin-top: 2em;
 }
 @media (min-width: 40rem) {
-	.section_item:nth-child(2) {
+	.item:nth-child(2) {
 		margin-top: 0;
 	}
-	.section_item {
+	.item {
 		flex-basis: calc(50% - 1em);
 		margin: 0 1em;
 	}
-	.section_item:nth-child(2n + 1) {
+	.item:nth-child(2n + 1) {
 		margin-left: 0;
 	}
-	.section_item:nth-child(2n) {
+	.item:nth-child(2n) {
 		margin-right: 0;
 	}
 }
@@ -43,7 +46,7 @@
 		padding-top: 4em;
 		padding-bottom: 4em;
 	}
-	.section_content {
+	.content {
 		margin-top: 4em;
 		padding: 0;
 	}
@@ -53,46 +56,46 @@
 		padding-top: 5em;
 		padding-bottom: 5em;
 	}
-	.section_content {
+	.content {
 		margin-top: 5em;
 	}
-	.section_item:nth-child(3) {
+	.item:nth-child(3) {
 		margin-top: 0;
 	}
-	.section_item {
+	.item {
 		flex-basis: calc((100% - 4em) / 3);
 	}
 
-	.section_item:nth-child(2n + 1) {
+	.item:nth-child(2n + 1) {
 		margin-left: 1em;
 	}
-	.section_item:nth-child(2n) {
+	.item:nth-child(2n) {
 		margin-right: 1em;
 	}
-	.section_item:nth-child(3n + 1) {
+	.item:nth-child(3n + 1) {
 		margin-left: 0;
 	}
-	.section_item:nth-child(3n) {
+	.item:nth-child(3n) {
 		margin-right: 0;
 	}
 }
 @media (min-width: 75rem) {
-	.section_item {
+	.item {
 		flex-basis: calc(25% - (6em / 4));
 	}
-	.section_item:nth-child(4) {
+	.item:nth-child(4) {
 		margin-top: 0;
 	}
-	.section_item:nth-child(3n + 1) {
+	.item:nth-child(3n + 1) {
 		margin-left: 1em;
 	}
-	.section_item:nth-child(3n) {
+	.item:nth-child(3n) {
 		margin-right: 1em;
 	}
-	.section_item:nth-child(4n + 1) {
+	.item:nth-child(4n + 1) {
 		margin-left: 0;
 	}
-	.section_item:nth-child(4n) {
+	.item:nth-child(4n) {
 		margin-right: 0;
 	}
 }

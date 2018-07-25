@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import $ from "./style.css";
 
 class Tabs extends Component {

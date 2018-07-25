@@ -6,12 +6,7 @@
 	transition-timing-function: ease-in-out;
 }
 .heading {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-align: center;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	composes: heading from "~/pages/structure/style.css";
 }
 .content {
 	max-width: 40rem;
@@ -45,9 +40,6 @@
 	.section {
 		padding: 2em 4em;
 	}
-	.heading {
-		font-size: 2em;
-	}
 	.tagline {
 		font-size: 1em;
 	}
@@ -58,9 +50,6 @@
 @media (min-width: 64rem) {
 	.section {
 		padding: 3em 5em;
-	}
-	.heading {
-		font-size: 3em;
 	}
 	.content {
 		margin: 3em auto 0;

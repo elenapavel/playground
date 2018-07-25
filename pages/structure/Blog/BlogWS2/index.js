@@ -1,6 +1,6 @@
-import SectionTitle from "~/components/SectionTitle";
+import React from "react";
 import Article from "./Article";
-import items from "./data.js";
+import data from "./data";
 import $ from "./style.css";
 
 const components = {
@@ -8,15 +8,15 @@ const components = {
 	block: Article,
 };
 
-export default ({ title }) => {
+export default ({ heading }) => {
 	let i = 0;
 
 	return (
 		<b className={$.section}>
-			<SectionTitle title={title || "Section title"} />
+			<b className={$.heading}>{heading || data.heading}</b>
 			<b className={$.content}>
 				<b className={$.to_left}>
-					{items.map((item, key) => {
+					{data.items.map((item, key) => {
 						const Component = components[item.type];
 
 						if (item.type == "featured") {
@@ -29,7 +29,7 @@ export default ({ title }) => {
 					})}
 				</b>
 				<b className={$.to_right}>
-					{items.map((item, key) => {
+					{data.items.map((item, key) => {
 						const Component = components[item.type];
 						const hasMoreThanFourElements = i >= 4;
 
@@ -46,7 +46,7 @@ export default ({ title }) => {
 				</b>
 
 				<b className={$.to_bottom}>
-					{items.slice(5).map((item, key) => {
+					{data.items.slice(5).map((item, key) => {
 						const Component = components[item.type];
 
 						if (item.type == "block") {

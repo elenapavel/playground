@@ -1,35 +1,14 @@
-import SectionTitle from "~/components/SectionTitle";
-import { STATIC } from "~/playground";
+import React from "react";
 import Steps from "./Steps";
+import data from "./data";
 import $ from "./style.css";
 
-const data = {
-	title: "Features",
-	previewImage: `${STATIC}/images/planets/Saturn.jpeg`,
-	features: [
-		{
-			title: "Feature 1",
-			headline: "Lorem ipsum dolor sit amet consectetur est",
-		},
-		{
-			title: "Feature 2",
-			headline:
-				"Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est",
-		},
-		{
-			title: "Feature 3",
-			headline:
-				"Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est",
-		},
-	],
-};
-
-export default () => (
+export default ({ heading }) => (
 	<b className={$.featured}>
-		<SectionTitle title={data.title || "SectionTitle"} />
+		<b className={$.heading}>{heading || data.heading}</b>
 		<b className={$.featured_section}>
 			<b className={$.featured_list}>
-				<Steps steps={data.features} />
+				<Steps items={data.features} />
 			</b>
 			<b
 				className={$.featured_preview}

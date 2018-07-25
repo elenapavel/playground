@@ -24,7 +24,8 @@
 }
 .date {
 }
-.title {
+.heading {
+	composes: subheading from "~/pages/structure/style.css";
 	font-weight: bold;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -35,10 +36,10 @@
 	max-height: 1.68em;
 	margin-top: 1rem;
 }
-.article_featured .title {
+.article_featured .heading {
 	margin-top: 0;
 }
-.headline {
+.description {
 	font-size: 1em;
 	transition: font-size 0.3s ease-in-out;
 	margin-top: 1rem;
@@ -49,7 +50,7 @@
 	-webkit-line-clamp: 1;
 	max-height: 1.4em;
 }
-.article_featured .headline {
+.article_featured .description {
 	-webkit-line-clamp: 1;
 	max-height: 1.4em;
 }
@@ -70,6 +71,20 @@
 	padding-left: 0.5em;
 	vertical-align: middle;
 }
+.read_more_icon:before {
+	content: "\f3d3";
+	display: inline-block;
+	font-family: "Ionicons";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-rendering: auto;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 @media (min-width: 32.5rem) {
 	.article > :first-child {
 		flex-basis: 16em;
@@ -86,11 +101,11 @@
 	.article_featured .content {
 		flex-basis: calc(50% - 1em);
 	}
-	.article_featured .title {
+	.article_featured .heading {
 		-webkit-line-clamp: 2;
 		max-height: 3.36em;
 	}
-	.article_featured .headline {
+	.article_featured .description {
 		-webkit-line-clamp: 3;
 		max-height: 4.2em;
 	}
@@ -105,14 +120,14 @@
 	.article_featured {
 		display: flex;
 	}
-	.article_featured .title {
+	.article_featured .heading {
 		max-height: 4.2em;
 	}
-	.title {
+	.heading {
 		-webkit-line-clamp: 2;
 		max-height: 4.2em;
 	}
-	.headline {
+	.description {
 		-webkit-line-clamp: 2;
 		max-height: 2.8em;
 	}
@@ -121,10 +136,10 @@
 	}
 }
 @media (min-width: 64rem) {
-	.title {
+	.heading {
 		max-height: 5.04em;
 	}
-	.article_featured .title {
+	.article_featured .heading {
 		max-height: 5.04em;
 	}
 }

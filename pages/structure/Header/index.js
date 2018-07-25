@@ -1,3 +1,4 @@
+import React from "react";
 import HeaderWS1 from "./HeaderWS1";
 import PlatformPromoWS1 from "./PlatformPromoWS1";
 import PlatformPromoWS2 from "./PlatformPromoWS2";

@@ -1,12 +1,9 @@
-import { Component } from "react";
-import SectionTitle from "~/components/SectionTitle";
-import Actions from "~/components/Actions";
+import React, { Component } from "react";
+import Actions from "./Actions";
 import Product from "./Product";
 import Ad from "./Ad";
-import items from "./data";
+import data from "./data";
 import $ from "./style.css";
-
-const categories = ["Category 1", "Category 2", "Category 3", "Category 4"];
 
 const components = { product: Product, ad: Ad };
 
@@ -24,20 +21,20 @@ class EcommerceWS1 extends Component {
 	}
 
 	render() {
-		const { title } = this.props;
+		const { heading } = this.props;
 		const { active, selectedProduct } = this.state;
 
 		return (
 			<b className={$.section}>
-				<SectionTitle title={title || "Products"} />
+				<b className={$.heading}>{heading || data.heading}</b>
 				<b className={$.content}>
 					<Actions
-						items={categories}
+						items={data.categories}
 						active={active}
 						onSelect={key => this.onSelectCategory(key)}
 					/>
 					<b className={$.items}>
-						{items[active].map((item, key) => {
+						{data.items[active].map((item, key) => {
 							const Component = components[item.type];
 
 							if (item.type == "product")

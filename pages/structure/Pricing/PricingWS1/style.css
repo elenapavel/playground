@@ -5,6 +5,9 @@
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 }
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
 .plans {
 	max-width: 80rem;
 	margin: auto;

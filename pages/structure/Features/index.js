@@ -1,3 +1,4 @@
+import React from "react";
 import FeaturesWS1 from "./FeaturesWS1";
 import FeaturesWS2 from "./FeaturesWS2";
 import FeaturesWS3 from "./FeaturesWS3";

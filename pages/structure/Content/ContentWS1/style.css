@@ -1,6 +1,8 @@
 .section {
 	position: relative;
 	padding: 2em;
+	max-width: 80rem;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -31,16 +33,17 @@
 .content > :first-child {
 	margin-top: 0;
 }
-.title {
-	font-weight: bold;
-	font-size: 1.5em;
-	transition: font-size 0.3s ease-in-out;
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+	text-align: left;
+	width: 100%;
+	padding: 0;
 }
-.headline {
+.description {
 }
 @media (min-width: 48rem) {
 	.section {
-		padding: 3em 5em;
+		padding: 3em 2em;
 	}
 	.preview_image {
 		flex-basis: 50%;
@@ -51,21 +54,15 @@
 		padding: 4em 0 4em 2em;
 		margin-top: 0;
 	}
-	.title {
-		font-size: 2em;
-	}
 }
 @media (min-width: 64rem) {
 	.section {
-		padding: 5em;
+		padding: 5em 2em;
 	}
 	.content {
 		padding: 5em 0 5em 5em;
 	}
 	.content > * {
 		margin-top: 2em;
-	}
-	.title {
-		font-size: 3em;
 	}
 }

@@ -23,14 +23,10 @@
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 }
-.content_title {
-	font-size: 1.5em;
-	font-weight: bold;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+.heading {
+	composes: heading from "~/pages/structure/style.css";
 }
-.content_headline {
+.description {
 	margin-top: 1em;
 	transition-property: margin;
 	transition-duration: 0.3s;
@@ -50,13 +46,10 @@
 .item:not(:first-child) {
 	margin-top: 1em;
 }
-.item_title {
-	font-size: 1.2em;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+.item_heading {
+	composes: subheading from "~/pages/structure/style.css";
 }
-.item_headline {
+.item_description {
 	margin-top: 0.5em;
 }
 .slider {
@@ -133,10 +126,7 @@
 		flex-basis: calc(50% - 1em);
 		max-width: none;
 	}
-	.content_title {
-		font-size: 2em;
-	}
-	.content_headline {
+	.description {
 		margin-top: 2em;
 	}
 	.to_right {
@@ -147,10 +137,7 @@
 	.item:not(:first-child) {
 		margin-top: 2em;
 	}
-	.item_title {
-		font-size: 1.5em;
-	}
-	.item_headline {
+	.item_description {
 		margin-top: 1em;
 	}
 	.slider {
@@ -179,12 +166,6 @@
 	}
 	.to_right {
 		flex-basis: calc(50% - 4em);
-	}
-	.content_title {
-		font-size: 3em;
-	}
-	.item_title {
-		font-size: 1.8em;
 	}
 	.slider {
 		margin: 3em 5em;

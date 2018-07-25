@@ -42,25 +42,8 @@
 	background-repeat: no-repeat;
 	transition: padding 0.3s ease-in-out;
 }
-.section:not(:first-child) {
-	margin-top: 2em;
-	transition: margin 0.3s ease-in-out;
-}
-.section_to_right {
-	composes: section;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	text-align: left;
-}
-.section_to_left {
-	composes: section;
-}
-.section_icon {
-	font-size: 2em;
-}
-.section_headline {
-	margin-top: 1em;
+.heading {
+	composes: heading from "~/pages/structure/style.css";
 }
 @media (min-width: 48rem) {
 	.featured {
@@ -83,10 +66,6 @@
 		flex-basis: 100%;
 		padding: 0;
 		margin-top: 4em;
-	}
-	.section_to_right {
-		align-items: flex-end;
-		text-align: right;
 	}
 }
 @media (min-width: 64rem) {

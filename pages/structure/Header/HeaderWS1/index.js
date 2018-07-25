@@ -1,43 +1,9 @@
-import { PureComponent } from "react";
-import { STATIC, BASE } from "~/playground";
-import Logo from "~/components/Logo";
-import Menu from "~/components/Menu";
-import AccountMenu from "~/components/AccountMenu";
+import React, { PureComponent } from "react";
+import Logo from "./Logo";
+import Menu from "./Menu";
+import AccountMenu from "./AccountMenu";
+import data from "./data";
 import $ from "./style.css";
-
-const items = [
-	{
-		link: BASE + "/",
-		name: "Item 1",
-	},
-	{
-		link: BASE + "/",
-		name: "Item 2",
-	},
-	{
-		link: BASE + "/",
-		name: "Item 3",
-	},
-	{
-		link: BASE + "/",
-		name: "Item 4",
-	},
-];
-
-const accountMenuItems = [
-	{
-		link: BASE + "/",
-		name: "Account Item 1",
-	},
-	{
-		link: BASE + "/",
-		name: "Account Item 2",
-	},
-	{
-		link: BASE + "/",
-		name: "Account Item 3",
-	},
-];
 
 class HeaderWS1 extends PureComponent {
 	state = {
@@ -61,23 +27,17 @@ class HeaderWS1 extends PureComponent {
 
 	render() {
 		const { isMenuOpened, isAccountMenuOpened } = this.state;
-		const logoSrc = `${STATIC}/images/dropbox_logo.png`;
-
-		const user = {
-			avatar: `${STATIC}/images/user.svg`,
-			name: "User",
-		};
 
 		return (
 			<b className={$.header}>
 				<b className={$.logo}>
-					<Logo image={logoSrc} />
+					<Logo image={data.logo} />
 				</b>
 				<b className={$.account}>
 					<AccountMenu
 						isMenuOpened={isAccountMenuOpened}
-						user={user}
-						items={accountMenuItems}
+						user={data.user}
+						items={data.accountMenuItems}
 						onChange={isAccountMenuOpened =>
 							this.toggleAccountMenu(isAccountMenuOpened)
 						}
@@ -86,7 +46,7 @@ class HeaderWS1 extends PureComponent {
 				<b className={$.menu}>
 					<Menu
 						isMenuOpened={isMenuOpened}
-						items={items}
+						items={data.items}
 						onChange={isMenuOpened => this.toggleMenu(isMenuOpened)}
 					/>
 				</b>

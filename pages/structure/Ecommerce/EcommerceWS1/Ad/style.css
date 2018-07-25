@@ -10,12 +10,7 @@
 	justify-content: center;
 }
 .heading {
-	font-size: 1.2em;
-	font-weight: bold;
-	text-align: center;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	composes: subheading from "~/pages/structure/style.css";
 }
 .subheading {
 	margin-top: 1rem;

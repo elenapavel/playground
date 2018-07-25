@@ -1,3 +1,4 @@
+import React from "react";
 import EcommerceWS1 from "./EcommerceWS1";
 import $ from "./style.css";
 

@@ -46,6 +46,9 @@
 	margin-right: auto;
 	transition: width 0.3s ease-in-out;
 }
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
 @media (min-width: 30rem) {
 	.promo_headline {
 		width: 90%;

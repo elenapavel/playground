@@ -1,3 +1,4 @@
+import React from "react";
 import BlogWS1 from "./BlogWS1";
 import BlogWS2 from "./BlogWS2";
 import BlogWS3 from "./BlogWS3";

@@ -4,11 +4,7 @@
 	padding: 2em;
 }
 .heading {
-	font-size: 1.2em;
-	font-weight: bold;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	composes: subheading from "~/pages/structure/style.css";
 }
 .excerpt {
 	margin-top: 0.5em;
@@ -37,17 +33,11 @@
 	transition-timing-function: ease-in-out;
 }
 @media (min-width: 48rem) {
-	.heading {
-		font-size: 1.5em;
-	}
 	.note {
 		margin-top: 2em;
 	}
 }
 @media (min-width: 64rem) {
-	.heading {
-		font-size: 1.8em;
-	}
 	.excerpt {
 		font-size: 1.2em;
 		margin-top: 1em;

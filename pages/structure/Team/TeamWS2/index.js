@@ -1,5 +1,4 @@
-import { Component } from "react";
-import SectionTitle from "~/components/SectionTitle";
+import React, { Component } from "react";
 import Member from "./Member";
 import Register from "./Register";
 import data from "./data";
@@ -12,18 +11,18 @@ const components = {
 
 class TeamWS1 extends Component {
 	render() {
-		const { title } = this.props;
+		const { heading } = this.props;
 
 		return (
 			<b className={$.section}>
-				<SectionTitle title={title || "Section Title"} />
-				<b className={$.section_content}>
+				<b className={$.heading}>{heading || data.heading}</b>
+				<b className={$.content}>
 					{data.items.length &&
 						data.items.map((item, key) => {
 							const Component = components[item.type];
 
 							return (
-								<b className={$.section_item} key={key}>
+								<b className={$.item} key={key}>
 									{item.type == "member" ? (
 										<Component
 											avatar={item.avatar}
@@ -31,7 +30,7 @@ class TeamWS1 extends Component {
 											position={item.position}
 										/>
 									) : item.type == "register" ? (
-										<Component title={item.title} />
+										<Component heading={item.heading} />
 									) : null}
 								</b>
 							);

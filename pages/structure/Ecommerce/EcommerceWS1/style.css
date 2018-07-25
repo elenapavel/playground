@@ -13,6 +13,9 @@
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 }
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
 .items {
 	display: flex;
 	flex-direction: row;

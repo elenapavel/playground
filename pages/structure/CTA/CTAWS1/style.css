@@ -10,19 +10,17 @@
 	margin: auto;
 }
 .heading {
-	font-size: 1.5em;
-	font-weight: bold;
+	composes: heading from "~/pages/structure/style.css";
+	width: 100%;
 	text-align: center;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	padding: 0;
 }
-.subheading {
-	margin-top: 2rem;
+.description {
 	text-align: center;
 	transition-property: font-size;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
+	margin-top: 2rem;
 }
 .action {
 	margin-top: 2em;
@@ -41,21 +39,15 @@
 	.section {
 		padding: 2em 4em;
 	}
-	.heading {
-		font-size: 2em;
-	}
-	.subheading {
-		font-size: 1.2em;
-	}
 	.tagline {
 		font-size: 1em;
+	}
+	.description {
+		font-size: 1.2em;
 	}
 }
 @media (min-width: 64rem) {
 	.section {
 		padding: 3em 5em;
-	}
-	.heading {
-		font-size: 3em;
 	}
 }

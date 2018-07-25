@@ -1,3 +1,4 @@
+import React from "react";
 import PortfolioWS1 from "./PortfolioWS1";
 import PortfolioWS2 from "./PortfolioWS2";
 import PortfolioWS3 from "./PortfolioWS3";

@@ -1,29 +1,8 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import Header from "./Header";
-import Form from "~/components/Form";
-import SectionTitle from "~/components/SectionTitle";
+import Form from "./Form";
+import data from "./data";
 import $ from "./style.css";
-
-const fields = [
-	{
-		type: "text",
-		placeholder: "Name",
-		icon: null,
-		ref: "name",
-	},
-	{
-		type: "password",
-		placeholder: "Password",
-		icon: "ion-ios-eye",
-		ref: "password",
-	},
-	{
-		type: null,
-		placeholder: "Message",
-		icon: null,
-		ref: "message",
-	},
-];
 
 class PlatformPromo extends Component {
 	onRegisterFormSubmit(refs) {
@@ -37,7 +16,7 @@ class PlatformPromo extends Component {
 	}
 
 	render() {
-		const { title } = this.props;
+		const { heading } = this.props;
 		const socialIconClasses = `${$.social_signup_icon} ion-social-facebook`;
 
 		return (
@@ -46,21 +25,17 @@ class PlatformPromo extends Component {
 					<Header />
 				</b>
 				<b className={$.promo_section}>
-					<SectionTitle title={title || "Section Title"} />
-					<b className={$.promo_headline}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nulla imperdiet ante sed orci efficitur interdum quis eu
-						neque.
-					</b>
+					<b className={$.heading}>{heading || data.heading}</b>
+					<b className={$.promo_headline}>{data.description}</b>
 					<b className={$.social_signup}>
 						<i className={socialIconClasses} />
-						Sign up with Facebook
+						{data.socialLoginText}
 					</b>
-					<b className={$.option_headline}>or register usign form</b>
+					<b className={$.option_headline}>{data.optionText}</b>
 					<b className={$.register_form}>
 						<Form
-							fields={fields}
-							submitActionText="Sign up"
+							fields={data.fields}
+							submitActionText={data.submitActionText}
 							onSubmit={refs => this.onRegisterFormSubmit(refs)}
 						/>
 					</b>

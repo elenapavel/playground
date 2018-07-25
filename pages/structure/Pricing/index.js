@@ -1,3 +1,4 @@
+import React from 'react'
 import PricingWS1 from "./PricingWS1";
 import $ from "./style.css";
 

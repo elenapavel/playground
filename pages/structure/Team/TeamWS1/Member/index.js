@@ -1,6 +1,5 @@
-import { Component } from "react";
-import SocialLinks from "~/components/SocialLinks";
-import Title from "~/components/Title";
+import React, { Component } from "react";
+import SocialLinks from "./SocialLinks";
 import $ from "./style.css";
 
 class Member extends Component {
@@ -36,7 +35,7 @@ class Member extends Component {
 					style={{ backgroundImage: `url(${avatar})` }}
 				/>
 				<b className={$.details}>
-					<Title title={name} />
+					<b className={$.heading}>{name}</b>
 					<b className={$.position}>{position}</b>
 					<b className={$.description}>{description}</b>
 					<b className={$.social_media}>

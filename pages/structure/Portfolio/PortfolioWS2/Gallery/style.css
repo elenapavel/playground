@@ -12,13 +12,13 @@
 	margin-right: auto;
 	position: relative;
 }
-.item_image {
+.image {
 	padding-top: 56.25%;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.item_content {
+.content {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -31,7 +31,10 @@
 	align-items: center;
 	text-align: center;
 }
-.item_headline {
+.heading {
+	composes: subheading from "~/pages/structure/style.css";
+}
+.description {
 	margin-top: 1em;
 }
 .item_full_width {

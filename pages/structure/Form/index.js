@@ -1,3 +1,4 @@
+import React from "react";
 import FormWS1 from "./FormWS1";
 import FormWS2 from "./FormWS2";
 import $ from "./style.css";

@@ -1,6 +1,6 @@
-import { Component } from "react";
-import SectionTitle from "~/components/SectionTitle";
+import React, { Component } from "react";
 import Member from "./Member";
+import data from "./data";
 import $ from "./style.css";
 
 class TeamWS1 extends Component {
@@ -19,26 +19,26 @@ class TeamWS1 extends Component {
 	}
 
 	render() {
-		const { members, title } = this.props;
+		const { heading } = this.props;
 		const { visibleMemberDetailsIndex } = this.state;
 
 		return (
 			<b className={$.section}>
-				<SectionTitle title={title || "Section Title"} />
-				<b className={$.section_content}>
-					{members.length &&
-						members.map((member, key) => (
-							<b className={$.section_item} key={key}>
+				<b className={$.heading}>{heading || data.heading}</b>
+				<b className={$.content}>
+					{data.members.length &&
+						data.members.map((item, key) => (
+							<b className={$.item} key={key}>
 								<Member
 									areDetailsVisible={
 										key == visibleMemberDetailsIndex
 									}
 									index={key}
-									avatar={member.avatar}
-									name={member.name}
-									position={member.position}
-									description={member.description}
-									socialMedia={member.socialMedia}
+									avatar={item.avatar}
+									name={item.name}
+									position={item.position}
+									description={item.description}
+									socialMedia={item.socialMedia}
 									onSelect={key =>
 										this.selectVisibleMemberDetailsByIndex(
 											key

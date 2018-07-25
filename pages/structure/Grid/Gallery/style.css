@@ -3,8 +3,6 @@
 }
 .section {
 	display: flex;
-	max-width: 80rem;
-	margin: auto;
 	padding: 2em;
 	flex-direction: row;
 	flex-wrap: wrap;

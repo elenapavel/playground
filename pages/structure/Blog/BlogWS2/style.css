@@ -45,6 +45,9 @@
 	justify-content: space-between;
 	margin-top: 2em;
 }
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
 .block:not(:first-child) {
 	margin-top: 2em;
 }

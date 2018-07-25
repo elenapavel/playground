@@ -1,6 +1,7 @@
 import { STATIC } from "~/playground";
 
 export default {
+	heading: "Section title",
 	members: [
 		{
 			avatar: `${STATIC}/images/planets/Neptune.jpg`,

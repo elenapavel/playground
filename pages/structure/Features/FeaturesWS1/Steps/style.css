@@ -1,31 +1,32 @@
-.steps {
+.items {
 	position: relative;
 }
-.step {
+.item {
 	position: relative;
 }
-.step:not(:first-child) {
+.item:not(:first-child) {
 	margin-top: 2.5em;
 	transition: margin 0.3s ease-in-out;
 }
-.step_headline {
+.description {
 	margin-top: 1em;
+}
+.heading {
+	composes: subheading from "~/pages/structure/style.css";
 }
 .separator {
 	position: absolute;
 	top: 0.5em;
 	bottom: 0;
 	left: 0;
-	/*margin-left: -1em;*/
 	margin-left: -2em;
 	border-left: 1px solid var(--background_color_accent);
 }
-.step_index {
+.index {
 	position: absolute;
 	top: 0.5em;
 	left: 0;
 	font-size: 0.8em;
-	/*margin-left: -2.2em;*/
 	margin-left: -3.4em;
 	padding: 0.5em 0;
 	width: 2em;
@@ -39,15 +40,15 @@
 	z-index: 10;
 }
 @media (min-width: 48rem) {
-	.step:not(:first-child) {
+	.item:not(:first-child) {
 		margin-top: 4em;
 	}
-	.step_headline {
+	.description {
 		margin-top: 2em;
 	}
 }
 @media (min-width: 64rem) {
-	.step:not(:first-child) {
+	.item:not(:first-child) {
 		margin-top: 5em;
 	}
 }

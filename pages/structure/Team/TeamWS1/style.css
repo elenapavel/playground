@@ -3,7 +3,10 @@
 	padding: 2em var(--container_margin);
 	transition: padding 0.3s ease-in-out;
 }
-.section_content {
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+}
+.content {
 	margin-top: 2em;
 	padding: 0 2em;
 	transition-property: padding, margin;
@@ -15,19 +18,19 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.section_item {
+.item {
 	flex-basis: 100%;
 	max-width: 30rem;
 	margin: auto;
 }
-.section_item:not(:first-child) {
+.item:not(:first-child) {
 	margin-top: 2em;
 }
 @media (min-width: 40rem) {
-	.section_item:nth-child(2) {
+	.item:nth-child(2) {
 		margin-top: 0;
 	}
-	.section_item {
+	.item {
 		flex-basis: calc(50% - 1em);
 		margin: 0;
 	}
@@ -37,7 +40,7 @@
 		padding-top: 4em;
 		padding-bottom: 4em;
 	}
-	.section_content {
+	.content {
 		margin-top: 4em;
 		padding: 0;
 	}
@@ -47,13 +50,13 @@
 		padding-top: 5em;
 		padding-bottom: 5em;
 	}
-	.section_content {
+	.content {
 		margin-top: 5em;
 	}
-	.section_item:nth-child(3) {
+	.item:nth-child(3) {
 		margin-top: 0;
 	}
-	.section_item {
+	.item {
 		flex-basis: calc((100% - 4em) / 3);
 	}
 }

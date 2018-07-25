@@ -1,37 +1,21 @@
-import { STATIC } from "~/playground";
-import SectionTitle from "~/components/SectionTitle";
+import data from "./data";
 import $ from "./style.css";
 
-const items = [
-	{
-		title: "Item one",
-		headline:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet ante sed orci efficitur interdum quis eu neque.",
-	},
-	{
-		title: "Item two",
-		headline:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet ante sed orci efficitur interdum quis eu neque.",
-	},
-];
-
-export default ({ title }) => (
+export default ({ heading }) => (
 	<b className={$.portfolio}>
 		<b className={$.content}>
 			<b className={$.to_left}>
-				<b className={$.content_title}>{title || "Section title"}</b>
-				<b className={$.content_headline}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Nulla imperdiet ante sed orci efficitur interdum quis eu
-					neque.
-				</b>
+				<b className={$.heading}>{heading || data.heading}</b>
+				<b className={$.description}>{data.description}</b>
 			</b>
 			<b className={$.to_right}>
 				<b className={$.items}>
-					{items.map((item, key) => (
+					{data.items.map((item, key) => (
 						<b className={$.item} key={key}>
-							<b className={$.item_title}>{item.title}</b>
-							<b className={$.item_headline}>{item.headline}</b>
+							<b className={$.item_heading}>{item.heading}</b>
+							<b className={$.item_description}>
+								{item.description}
+							</b>
 						</b>
 					))}
 				</b>
@@ -41,7 +25,7 @@ export default ({ title }) => (
 			<b
 				className={$.preview}
 				style={{
-					backgroundImage: `url(${STATIC}/images/planets/Saturn.jpeg)`,
+					backgroundImage: `url(${data.preview}`,
 				}}
 			/>
 			<b className={$.actions}>

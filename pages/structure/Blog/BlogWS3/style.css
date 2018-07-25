@@ -22,26 +22,26 @@
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 }
-.tag {
+.tagline {
 	font-size: 0.9em;
 	font-weight: bold;
 }
-.title {
-	font-size: 1.5em;
-	font-weight: bold;
+.heading {
+	composes: heading from "~/pages/structure/style.css";
+	width: 100%;
+	padding: 0;
+	text-align: left;
 	margin-top: 0.5rem;
 	line-height: 1.2;
 	transition-property: font-size, margin;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
 }
-.headline {
+.description {
 	margin-top: 1em;
 	transition-property: margin;
 	transition-duration: 0.3s;
 	transition-timing-function: ease-in-out;
 }
-.description {
+.content {
 }
 .action {
 	margin-top: 1em;
@@ -69,9 +69,6 @@
 	.section {
 		padding: 2em 4em;
 	}
-	.title {
-		font-size: 2em;
-	}
 	.extra {
 		margin-top: 2em;
 	}
@@ -91,16 +88,13 @@
 		max-width: none;
 		flex-basis: calc(50% - 5em);
 	}
-	.tag {
+	.tagline {
 		font-size: 1em;
 	}
-	.title {
-		font-size: 3em;
-	}
-	.headline {
+	.description {
 		font-size: 1.2em;
 	}
-	.description {
+	.content {
 		font-size: 1.2em;
 	}
 	.extra {
