@@ -1,5 +1,5 @@
 import React from "react";
-import Register from "./Register";
+import Button from "./Button";
 import Header from "./Header";
 import data from "./data";
 import $ from "./style.css";
@@ -12,7 +12,7 @@ export default ({ heading }) => (
 				<b className={$.heading}>{heading || data.heading}</b>
 				<b className={$.description}>{data.description}</b>
 				<i className={$.register_action}>
-					<Register />
+					<Button />
 				</i>
 			</b>
 			<b className={$.to_right}>

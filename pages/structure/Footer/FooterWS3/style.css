@@ -38,6 +38,10 @@
 	flex-basis: 100%;
 }
 .get_platform {
+	font-size: 1em;
+	transition-property: font-size;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
 }
 .get_platform_text {
 }
@@ -99,6 +103,9 @@
 		font-size: 1.2em;
 	}
 	.copyright {
+		font-size: 1.2em;
+	}
+	.get_platform {
 		font-size: 1.2em;
 	}
 	.to_left {

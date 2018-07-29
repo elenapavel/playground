@@ -12,7 +12,10 @@
 	transition-timing-function: ease-in-out;
 	margin-top: 1em;
 }
-.section_headline {
+.section_heading {
+	composes: subheading from "~/pages/structure/style.css";
+}
+.section_description {
 	margin-top: 1em;
 	transition: margin 0.3s ease-in-out;
 }

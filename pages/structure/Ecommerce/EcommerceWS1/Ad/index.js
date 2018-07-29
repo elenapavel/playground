@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Register from "./Register";
+import Button from "./Button";
 import $ from "./style.css";
 
 export default ({ heading, subheading, link }) => (
@@ -10,7 +10,7 @@ export default ({ heading, subheading, link }) => (
 		<i className={$.action}>
 			<Link href={link}>
 				<a>
-					<Register text="Read more" />
+					<Button label="Read more" />
 				</a>
 			</Link>
 		</i>

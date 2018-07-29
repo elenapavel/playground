@@ -18,5 +18,8 @@ export default {
 		},
 	],
 	copyright: "© GreatSimple.co 2019. All right reserved.",
-	getPlatformLink: "#",
+	getPlatform: {
+		text: "Download our app",
+		link: "#",
+	},
 };

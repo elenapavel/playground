@@ -4,82 +4,82 @@ export default {
 	content: [
 		[
 			{
-				title: "Feature 1",
-				headline:
+				heading: "Feature 1",
+				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at enim placerat, sollicitudin risus ac, maximus arcu. Suspendisse ornare gravida dui sit amet suscipit. Duis viverra elit nec volutpat sagittis.",
 			},
 			{
-				title: "Feature two",
-				headline:
+				heading: "Feature two",
+				description:
 					"Duis viverra elit nec volutpat sagittis. Aliquam ut sodales urna. Quisque ut ex eros. Nam fringilla quis velit at blandit. Morbi laoreet ac nisl eu rutrum.",
 			},
 			{
-				title: "Feature 3",
-				headline:
+				heading: "Feature 3",
+				description:
 					"Aliquam ut sodales urna. Quisque ut ex eros. Nam fringilla quis velit at blandit. Morbi laoreet ac nisl eu rutrum. In sit amet sollicitudin eros, vel placerat metus. ",
 			},
 			{
-				title: "Feature four",
-				headline:
+				heading: "Feature four",
+				description:
 					"In sit amet sollicitudin eros, vel placerat metus. Cras placerat nunc lorem, rhoncus hendrerit urna hendrerit eu. Morbi eu vehicula quam. Donec aliquet nisi sed egestas ultricies",
 			},
 			{
-				title: "Feature 5",
-				headline:
+				heading: "Feature 5",
+				description:
 					"In sit amet sollicitudin eros, vel placerat metus. Cras placerat nunc lorem, rhoncus hendrerit urna hendrerit eu.",
 			},
 			{
-				title: "Feature 6",
-				headline:
+				heading: "Feature 6",
+				description:
 					"Cras placerat nunc lorem, rhoncus hendrerit urna hendrerit eu. Morbi eu vehicula quam. Donec aliquet nisi sed egestas ultricies",
 			},
 		],
 		[
 			{
-				title: "Feature 1",
-				headline:
+				heading: "Feature 1",
+				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at enim placerat, sollicitudin risus ac, maximus arcu. Suspendisse ornare gravida dui sit amet suscipit. Duis viverra elit nec volutpat sagittis.",
 			},
 			{
-				title: "Feature two",
-				headline:
+				heading: "Feature two",
+				description:
 					"Duis viverra elit nec volutpat sagittis. Aliquam ut sodales urna. Quisque ut ex eros. Nam fringilla quis velit at blandit. Morbi laoreet ac nisl eu rutrum.",
 			},
 			{
-				title: "Feature 3",
-				headline:
+				heading: "Feature 3",
+				description:
 					"Aliquam ut sodales urna. Quisque ut ex eros. Nam fringilla quis velit at blandit. Morbi laoreet ac nisl eu rutrum. In sit amet sollicitudin eros, vel placerat metus. ",
 			},
 			{
-				title: "Feature four",
-				headline:
+				heading: "Feature four",
+				description:
 					"In sit amet sollicitudin eros, vel placerat metus. Cras placerat nunc lorem, rhoncus hendrerit urna hendrerit eu. Morbi eu vehicula quam. Donec aliquet nisi sed egestas ultricies",
 			},
 		],
 		[
 			{
-				title: "Feature 1",
-				headline:
+				heading: "Feature 1",
+				description:
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at enim placerat, sollicitudin risus ac, maximus arcu. Suspendisse ornare gravida dui sit amet suscipit. Duis viverra elit nec volutpat sagittis.",
 			},
 			{
-				title: "Feature two",
-				headline:
+				heading: "Feature two",
+				description:
 					"Duis viverra elit nec volutpat sagittis. Aliquam ut sodales urna. Quisque ut ex eros. Nam fringilla quis velit at blandit. Morbi laoreet ac nisl eu rutrum.",
 			},
 			{
-				title: "Feature 3",
-				headline:
+				heading: "Feature 3",
+				description:
 					"Aliquam ut sodales urna. Quisque ut ex eros. Nam fringilla quis velit at blandit. Morbi laoreet ac nisl eu rutrum. In sit amet sollicitudin eros, vel placerat metus. ",
 			},
 			{
-				title: "Feature four",
-				headline:
+				heading: "Feature four",
+				description:
 					"In sit amet sollicitudin eros, vel placerat metus. Cras placerat nunc lorem, rhoncus hendrerit urna hendrerit eu. Morbi eu vehicula quam. Donec aliquet nisi sed egestas ultricies",
 			},
 			{
-				title: "Feature 5",
-				headline:
+				heading: "Feature 5",
+				description:
 					"In sit amet sollicitudin eros, vel placerat metus. Cras placerat nunc lorem, rhoncus hendrerit urna hendrerit eu.",
 			},
 		],

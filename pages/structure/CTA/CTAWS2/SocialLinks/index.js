@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import Tooltip from "~/components/Tooltip";
+import Tooltip from "./Tooltip";
 import $ from "./style.css";
 
 class SocialLinks extends Component {

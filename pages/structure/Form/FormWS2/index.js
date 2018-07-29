@@ -1,36 +1,16 @@
+import React from "react";
 import Link from "next/link";
-import { STATIC } from "~/playground";
-import Form from "~/components/Form";
-import Register from "~/components/Register";
+import Form from "./Form";
+import Button from "./Button";
+import data from "./data";
 import $ from "./style.css";
-
-const fields = [
-	{
-		type: "text",
-		icon: "",
-		placeholder: "Username",
-		ref: "userName",
-		background: "#e6f0fc",
-	},
-	{
-		type: "password",
-		icon: "",
-		placeholder: "Password",
-		ref: "password",
-		background: "#e6f0fc",
-	},
-];
-
-const submitAction = {
-	text: "Login",
-};
 
 export default () => (
 	<b className={$.section}>
 		<b
 			className={$.preview}
 			style={{
-				backgroundImage: `url(${STATIC}/images/planets/Saturn.jpeg)`,
+				backgroundImage: `url(${data.background})`,
 			}}
 		/>
 		<b className={$.content}>
@@ -39,19 +19,19 @@ export default () => (
 				<b className={$.subheading}>Login to have access to files</b>
 				<b className={$.login_action}>
 					<Form
-						fields={fields}
-						submitActionText={submitAction.text}
+						fields={data.fields}
+						submitActionText={data.submitAction.text}
 					/>
 				</b>
-				<b className={$.tagline}>or</b>
+				<b className={$.tagline}>{data.tagline}</b>
 				<b className={$.register_action}>
-					<Register text="Sign up" />
+					<Button label={data.registerAction.text} />
 				</b>
 				<b className={$.forgot_password_action}>
-					<Link href="#">
+					<Link href={data.resetAction.link}>
 						<a>
 							<i className={$.forgot_password}>
-								Forgot password?
+								{data.resetAction.text}
 								<b className={$.forgot_password_line} />
 							</i>
 						</a>

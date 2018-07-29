@@ -1,5 +1,6 @@
+import React from "react";
 import Link from "next/link";
-import SocialLinks from "~/components/SocialLinks";
+import SocialLinks from "./SocialLinks";
 import data from "./data";
 import $ from "./style.css";
 

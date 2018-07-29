@@ -1,6 +1,7 @@
+import React from "react";
 import Link from "next/link";
-import Logo from "~/components/Logo";
-import SocialLinks from "~/components/SocialLinks";
+import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 import data from "./data";
 import $ from "./style.css";
 

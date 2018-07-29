@@ -1,4 +1,4 @@
-import Title from "~/components/Title";
+import React from "react";
 import $ from "./style.css";
 
 export default ({ sections }) => (
@@ -22,8 +22,10 @@ export default ({ sections }) => (
 							key == 0 || key == sections.length / 2 ? 0 : null,
 					}}
 				>
-					<Title title={section.title} />
-					<b className={$.section_headline}>{section.headline}</b>
+					<b className={$.section_heading}>{section.heading}</b>
+					<b className={$.section_description}>
+						{section.description}
+					</b>
 				</b>
 			))}
 	</b>

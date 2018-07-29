@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import Register from "./Register";
+import Button from "./Button";
 import $ from "./style.css";
 
 class Card extends Component {
@@ -35,7 +35,7 @@ class Card extends Component {
 				<b className={$.action}>
 					<Link href={link}>
 						<a>
-							<Register text="Get plan" />
+							<Button label="Get plan" />
 						</a>
 					</Link>
 				</b>

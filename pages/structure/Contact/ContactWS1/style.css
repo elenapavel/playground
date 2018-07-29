@@ -36,12 +36,9 @@
 	transition-timing-function: ease-in-out;
 }
 .heading {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-align: center;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	composes: heading from "~/pages/structure/style.css";
+	padding: 0;
+	width: 100%;
 }
 .subheading {
 	transition-property: font-size;
@@ -83,9 +80,6 @@
 	.to_right {
 		flex-basis: 30rem;
 	}
-	.heading {
-		font-size: 2em;
-	}
 	.subheading {
 		font-size: 1.2em;
 	}
@@ -106,8 +100,5 @@
 	}
 	.to_right {
 		padding: 3em 5em;
-	}
-	.heading {
-		font-size: 3em;
 	}
 }

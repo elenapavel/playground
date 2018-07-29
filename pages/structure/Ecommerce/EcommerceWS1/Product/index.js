@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import Register from "./Register";
+import Button from "./Button";
 import $ from "./style.css";
 
 class Product extends Component {
@@ -44,11 +44,11 @@ class Product extends Component {
 						{link ? (
 							<Link href={link}>
 								<a>
-									<Register text="Buy" />
+									<Button label="Buy" />
 								</a>
 							</Link>
 						) : (
-							<Register text="Buy" />
+							<Button label="Buy" />
 						)}
 					</i>
 				</b>

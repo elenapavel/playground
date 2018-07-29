@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
-import Register from "./Register";
+import Button from "./Button";
 import Search from "./Search";
 import data from "./data";
 import $ from "./style.css";
@@ -48,7 +48,7 @@ class HeaderWS2 extends Component {
 							/>
 						</b>
 						<b className={$.register}>
-							<Register />
+							<Button />
 						</b>
 					</b>
 					<b className={$.menu}>

@@ -1,47 +1,8 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { Gmaps, Marker, InfoWindow, Circle } from "react-gmaps";
-import Form from "~/components/Form";
+import Form from "./Form";
+import data from "./data";
 import $ from "./style.css";
-
-const fields = [
-	{
-		type: "text",
-		icon: "",
-		placeholder: "Name",
-		ref: "name",
-		background: "#e6f0fc",
-	},
-	{
-		type: "email",
-		icon: "",
-		placeholder: "Email",
-		ref: "email",
-		background: "#e6f0fc",
-	},
-	{
-		type: "text",
-		icon: "",
-		placeholder: "Subject",
-		background: "#e6f0fc",
-	},
-	{
-		type: "textarea",
-		icon: "",
-		placeholder: "Message",
-		background: "#e6f0fc",
-	},
-];
-
-const submitAction = {
-	text: "Send",
-};
-
-const coords = {
-	lat: 51.5258541,
-	lng: -0.08040660000006028,
-};
-
-const params = { v: "3.exp", key: "YOUR_API_KEY" };
 
 class ContactWS1 extends Component {
 	onMapCreated(map) {
@@ -68,42 +29,40 @@ class ContactWS1 extends Component {
 				<b className={$.content}>
 					<b className={$.to_left}>
 						<Gmaps
-							lat={coords.lat}
-							lng={coords.lng}
+							lat={data.map.coords.lat}
+							lng={data.map.coords.lng}
 							zoom={12}
-							loadingMessage={"Be happy"}
-							params={params}
+							loadingMessage={data.map.loadingMessage}
+							params={data.map.params}
 							onMapCreated={this.onMapCreated}
 						>
 							<Marker
-								lat={coords.lat}
-								lng={coords.lng}
+								lat={data.map.coords.lat}
+								lng={data.map.coords.lng}
 								draggable={true}
 								onDragEnd={this.onDragEnd}
 							/>
 							<InfoWindow
-								lat={coords.lat}
-								lng={coords.lng}
-								content={"Hello, React :)"}
+								lat={data.map.coords.lat}
+								lng={data.map.coords.lng}
+								content={data.map.infoBox}
 								onCloseClick={this.onCloseClick}
 							/>
 							<Circle
-								lat={coords.lat}
-								lng={coords.lng}
+								lat={data.map.coords.lat}
+								lng={data.map.coords.lng}
 								radius={500}
 								onClick={this.onClick}
 							/>
 						</Gmaps>
 					</b>
 					<b className={$.to_right}>
-						<b className={$.heading}>Sign in</b>
-						<b className={$.subheading}>
-							Login to have access to files
-						</b>
+						<b className={$.heading}>{data.form.heading}</b>
+						<b className={$.subheading}>{data.form.subheading}</b>
 						<b className={$.login_action}>
 							<Form
-								fields={fields}
-								submitActionText={submitAction.text}
+								fields={data.form.fields}
+								submitActionText={data.form.submitAction.text}
 							/>
 						</b>
 					</b>

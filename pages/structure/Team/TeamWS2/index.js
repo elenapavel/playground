@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Member from "./Member";
-import Register from "./Register";
+import Button from "./Button";
 import data from "./data";
 import $ from "./style.css";
 
 const components = {
 	member: Member,
-	register: Register,
+	register: Button,
 };
 
 class TeamWS1 extends Component {

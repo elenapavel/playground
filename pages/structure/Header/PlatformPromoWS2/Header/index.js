@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
-import Register from "./Register";
+import Button from "./Button";
 import data from "./data";
 import $ from "./style.css";
 
@@ -27,7 +27,7 @@ class Header extends Component {
 					</b>
 					<b className={$.to_right}>
 						<b className={$.register}>
-							<Register />
+							<Button />
 						</b>
 						<b className={$.menu}>
 							<Menu

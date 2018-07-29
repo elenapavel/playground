@@ -1,3 +1,4 @@
+import React from "react";
 import ContactWS1 from "./ContactWS1";
 import $ from "./style.css";
 

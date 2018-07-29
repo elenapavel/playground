@@ -24,11 +24,7 @@
 	margin-top: 2em;
 }
 .heading {
-	font-weight: bold;
-	font-size: 1.2em;
-	transition-property: font-size;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
+	composes: subheading from "~/pages/structure/style.css";
 }
 .column_content {
 	margin-top: 1em;
@@ -114,9 +110,6 @@
 	.content {
 		padding: 2em 4em 2em;
 	}
-	.heading {
-		font-size: 1.5em;
-	}
 	.menu_items {
 		font-size: 1.2em;
 	}
@@ -154,9 +147,6 @@
 	}
 	.column:nth-child(4) {
 		margin-top: 0;
-	}
-	.heading {
-		font-size: 1.8em;
 	}
 	.social_media {
 		font-size: 1em;

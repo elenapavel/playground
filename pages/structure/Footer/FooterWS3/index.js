@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import data from "./data";
 import $ from "./style.css";
@@ -20,10 +21,10 @@ export default () => (
 			</b>
 			<b className={$.to_right}>
 				<b className={$.get_platform}>
-					<Link href={data.getPlatformLink}>
+					<Link href={data.getPlatform.link}>
 						<a>
 							<b className={$.get_platform_text}>
-								Download our app
+								{data.getPlatform.text}
 								<i className={$.platform_preview} />
 							</b>
 						</a>
