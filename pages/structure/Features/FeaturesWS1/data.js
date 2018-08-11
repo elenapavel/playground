@@ -1,22 +1,22 @@
-import { STATIC } from "~/playground";
+import { STRUCTURE } from "~/playground";
 
 export default {
-	heading: "Section Title",
-	previewImage: `${STATIC}/images/planets/Saturn.jpeg`,
+	heading: "Being Human in a Post-Human World",
+	previewImage: `${STRUCTURE}/post-human-world.jpeg`,
 	features: [
 		{
-			heading: "Feature 1",
-			description: "Lorem ipsum dolor sit amet consectetur est",
+			heading: "A Bicycle for Our Mind",
+			description: "Rethinking Our Relationship with Machines",
 		},
 		{
-			heading: "Feature 2",
+			heading: "Jobs for Humans: Rethinking Our Work",
 			description:
-				"Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est",
+				"The predicted rate of automation of lower-paying jobs will inevitably force us to think about the role of work in a broader context.",
 		},
 		{
-			heading: "Feature 3",
+			heading: "Work of a Future Consultant: an Example",
 			description:
-				"Lorem ipsum dolor sit amet consectetur est. Lorem ipsum dolor sit amet consectetur est",
+				"Let’s use the future job of a management consultant as an example and look at it from three different perspectives: “Thinking”, “acting” and “sensing”.",
 		},
 	],
 };

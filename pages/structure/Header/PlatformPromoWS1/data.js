@@ -1,9 +1,9 @@
 export default {
-	heading: "Section Title",
+	heading: "We’re lucky Mark Zuckerberg is in charge",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet ante sed orci efficitur interdum quis eu neque.",
+		"Mark Zuckerberg has a job like no other human has ever had in the history of the world.",
 	socialLoginText: "Sign up with Facebook",
-	optionText: "or register usign form",
+	optionText: "or register using form",
 	fields: [
 		{
 			type: "text",

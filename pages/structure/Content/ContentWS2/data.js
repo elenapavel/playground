@@ -1,11 +1,12 @@
-import { STATIC } from "~/playground";
+import { STRUCTURE } from "~/playground";
 
 export default {
-	previewImage: `${STATIC}/images/planets/Saturn.jpeg`,
-	heading: "Lorem ipsum",
-	description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Nulla imperdiet ante sed orci efficitur interdum quis eu
-					neque.`,
-	readMoreText: "Learn More",
-	readMoreLink: "#",
+	previewImage: `${STRUCTURE}/facebook-early-days.jpeg`,
+	heading: "Sex, Beer and Coding",
+	description: `Inside Facebook’s Wild Early Days in Palo Alto.`,
+	readMore: {
+		text: "Read More",
+		link:
+			"https://medium.com/@WIRED/sex-beer-and-coding-inside-facebooks-wild-early-days-in-palo-alto-7b447c143d52",
+	},
 };

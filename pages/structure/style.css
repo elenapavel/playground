@@ -53,7 +53,6 @@
 @media (min-width: 48rem) {
 	.heading {
 		font-size: 2em;
-		width: 75%;
 	}
 	.subheading {
 		font-size: 1.5em;
@@ -67,8 +66,8 @@
 		font-size: 1.8rem;
 	}
 }
-@media (min-width: 80rem) {
+@media (min-width: 90rem) {
 	.heading {
-		width: 50%;
+		width: 75%;
 	}
 }

@@ -5,19 +5,19 @@ export default {
 	items: [
 		{
 			link: BASE + "#",
-			name: "Menu one",
+			name: "About",
 		},
 		{
 			link: BASE + "#",
-			name: "Menu two",
+			name: "Team",
 		},
 		{
 			link: BASE + "#",
-			name: "Menu three",
+			name: "Blog",
 		},
 		{
 			link: BASE + "#",
-			name: "Menu four",
+			name: "Contact",
 		},
 	],
 };

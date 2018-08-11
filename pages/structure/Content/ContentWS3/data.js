@@ -1,8 +1,8 @@
-import { STATIC } from "~/playground";
+import { STRUCTURE } from "~/playground";
 
 export default {
-	preview: `${STATIC}/images/planets/Saturn.jpeg`,
-	heading: "Section title",
+	preview: `${STRUCTURE}/delete-facebook.jpeg`,
+	heading: "Yes, You Should Delete Facebook",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet ante sed orci efficitur interdum quis eu neque.",
+		"Facebook knows so much about you they can make you believe they’re listening to your personal conversations. They have so much data about you they can send you ads that have an uncanny relevance to what is going on in the real world.",
 };

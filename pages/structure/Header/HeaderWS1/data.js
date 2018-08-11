@@ -5,37 +5,37 @@ export default {
 	items: [
 		{
 			link: BASE + "/",
-			name: "Item 1",
+			name: "Shop",
 		},
 		{
 			link: BASE + "/",
-			name: "Item 2",
+			name: "About",
 		},
 		{
 			link: BASE + "/",
-			name: "Item 3",
+			name: "Blog",
 		},
 		{
 			link: BASE + "/",
-			name: "Item 4",
+			name: "Contact",
 		},
 	],
 	accountMenuItems: [
 		{
 			link: BASE + "/",
-			name: "Account Item 1",
+			name: "Account",
 		},
 		{
 			link: BASE + "/",
-			name: "Account Item 2",
+			name: "Settings",
 		},
 		{
 			link: BASE + "/",
-			name: "Account Item 3",
+			name: "Orders",
 		},
 	],
 	user: {
 		avatar: `${STATIC}/images/user.svg`,
-		name: "User",
+		name: "John",
 	},
 };

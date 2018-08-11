@@ -1,9 +1,7 @@
-import { STATIC } from "~/playground";
+import { STRUCTURE } from "~/playground";
 
 export default {
-	previewImage: `${STATIC}/images/planets/Saturn.jpeg`,
-	heading: "Lorem ipsum",
-	description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Nulla imperdiet ante sed orci efficitur interdum quis eu
-					neque.`,
+	previewImage: `${STRUCTURE}/hearing-thoughts.jpeg`,
+	heading: "A New Device Can Hear Your Thoughts",
+	description: `“We wanted to capture interactions that are as close to thinking in your head as possible.”`,
 };

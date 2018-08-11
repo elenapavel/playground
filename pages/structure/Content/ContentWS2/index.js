@@ -9,9 +9,9 @@ export default () => (
 				<b className={$.heading}>{data.heading}</b>
 				<b className={$.description}>{data.description}</b>
 				<b className={$.read_more_action}>
-					<Link href={data.readMoreLink}>
+					<Link href={data.readMore.link}>
 						<a>
-							{data.readMoreText}
+							{data.readMore.text}
 							<i className={$.read_more_icon} />
 						</a>
 					</Link>

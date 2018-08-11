@@ -7,6 +7,7 @@ const publicURL = isProduction
 	: "";
 const staticURL = isProduction ? `${publicURL}/static` : "/static";
 const base = isProduction ? "/playground" : "";
+const structureURL = `${staticURL}/images/structure`;
 
 const routes = {
 	"/": { page: "/" },
@@ -23,7 +24,10 @@ const config = {
 	assetPrefix: publicURL,
 	publicRuntimeConfig: {
 		url: publicURL,
-		static: staticURL,
+		static: {
+			default: staticURL,
+			structure: structureURL,
+		},
 		base: base,
 	},
 	exportPathMap: () => routes,

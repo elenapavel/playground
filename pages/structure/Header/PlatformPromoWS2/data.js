@@ -1,8 +1,8 @@
-import { STATIC } from "~/playground";
+import { STRUCTURE } from "~/playground";
 
 export default {
-	heading: "Section Title",
+	heading: "The Art of Computer Programming",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet ante sed orci efficitur interdum quis eu neque.",
-	preview: `${STATIC}/images/planets/Saturn.jpeg`,
+		"Bill Gates once said, “If you think you’re a really good programmer… read Art of Computer Programming… You should definitely send me a résumé if you can read the whole thing.”",
+	preview: `${STRUCTURE}/art-of-computer-programming.png`,
 };

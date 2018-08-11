@@ -16,7 +16,7 @@ export default () => (
 				<b className={$.heading}>{data.heading}</b>
 				<b className={$.description}>{data.description}</b>
 				<i className={$.register_action}>
-					<Button />
+					<Button label="Try now" />
 				</i>
 			</b>
 		</b>
