@@ -18,6 +18,7 @@ const routes = {
 	"/universe-facts": { page: "/universe-facts" },
 	"/react-wireframe": { page: "/react-wireframe" },
 	"/structure": { page: "/structure" },
+	"/timer": { page: "/timer" },
 };
 
 const config = {
