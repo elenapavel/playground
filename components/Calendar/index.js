@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import format from "date-fns/format";
 import getYear from "date-fns/get_year";
 import addMonths from "date-fns/add_months";
@@ -15,18 +15,18 @@ import $ from "./style.css";
 export default class Calendar extends Component {
 	state = {};
 
-	static getDerivedStateFromProps(props, state) {
-		state.date = String(props.date || Date());
-		state.inViewDate = String(props.date || Date());
-		state.year = getYear(props.date || date());
+	constructor(props) {
+		super();
 
-		return state;
+		this.state.date = String(props.date || Date());
+		this.state.inViewDate = String(props.date || Date());
+		this.state.year = getYear(props.date || date());
 	}
 
 	onSelect = selected => {
 		const { onChange, onChangeView } = this.props;
 
-		this.setState({ date: selected });
+		this.setState({ date: selected, inViewDate: selected });
 
 		if (typeof onChange === "function") {
 			onChange(selected);
@@ -36,27 +36,36 @@ export default class Calendar extends Component {
 		}
 	};
 
-	nextMonth() {
+	nextMonth = () => {
 		const nextMonth = addMonths(this.state.inViewDate, 1);
-		this.setState({ inViewDate: nextMonth });
-		this.setState({ year: getYear(nextMonth) });
-	}
-	prevMonth() {
-		const prevMonth = subMonths(this.state.inViewDate, 1);
-		this.setState({ inViewDate: prevMonth });
-		this.setState({ year: getYear(prevMonth) });
-	}
 
-	nextYear() {
+		this.setState({
+			date: nextMonth,
+			inViewDate: nextMonth,
+			year: getYear(nextMonth),
+		});
+	};
+	prevMonth = () => {
+		const prevMonth = subMonths(this.state.inViewDate, 1);
+
+		this.setState({
+			date: prevMonth,
+			inViewDate: prevMonth,
+			year: getYear(prevMonth),
+		});
+	};
+
+	nextYear = () => {
 		this.setState({ year: this.state.year + 1 });
-	}
-	prevYear() {
+	};
+	prevYear = () => {
 		this.setState({ year: this.state.year - 1 });
-	}
+	};
 
 	render() {
 		const { onRender, view } = this.props;
 		const { inViewDate, date, year } = this.state;
+
 		const days = getMonthViewByDay(inViewDate, date);
 		const labelSelectedMonth = format(inViewDate, "MMM");
 		const labelSelectedYear = year;
@@ -70,14 +79,15 @@ export default class Calendar extends Component {
 				onRender={onRender}
 			/>
 		));
+
 		return (
 			<div>
 				{view.toLowerCase() == "month" ? (
 					<div className={$.calendar}>
 						<Header
 							label={label}
-							next={() => this.nextMonth()}
-							prev={() => this.prevMonth()}
+							next={this.nextMonth}
+							prev={this.prevMonth}
 						/>
 						<WeekDays />
 						<Grid items={items} />
@@ -86,8 +96,8 @@ export default class Calendar extends Component {
 					<div className={$.calendar}>
 						<Header
 							label={labelSelectedYear}
-							next={() => this.nextYear()}
-							prev={() => this.prevYear()}
+							next={this.nextYear}
+							prev={this.prevYear}
 						/>
 						<div className={$.months}>
 							{new Array(12).fill(null).map((index, key) => {
@@ -99,12 +109,7 @@ export default class Calendar extends Component {
 								);
 								const currentItems = selectedDays.map(
 									({ date, type }) => (
-										<Day
-											date={date}
-											type={type}
-											// onSelect={this.onSelect}
-											// onRender={onRender}
-										/>
+										<Day date={date} type={type} />
 									)
 								);
 

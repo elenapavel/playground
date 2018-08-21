@@ -7,10 +7,10 @@ export default ({ label, next, prev }) => {
 	return (
 		<div className={$.header}>
 			{prev != null ? (
-				<div className={prevArrowClasses} onClick={() => prev()} />
+				<div className={prevArrowClasses} onClick={prev} />
 			) : null}
 			{next != null ? (
-				<div className={nextArrowClasses} onClick={() => next()} />
+				<div className={nextArrowClasses} onClick={next} />
 			) : null}
 			<div
 				className={$.label}
