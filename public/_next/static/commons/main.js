@@ -1,108 +1,6 @@
 module.exports =
 webpackJsonp([0],{
 
-/***/ "./components/Calendar/WeekDays/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"container_3gkux","week_day":"week_day_2xjv6"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1534857952199");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/Calendar/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"calendar":"calendar_3EgcE","months":"months_2kZNR","month":"month_gYg06","label":"label_1m5FI","header":"header_1D5WO","arrow":"arrow_e4RT8","grid":"grid_25QmZ","grid_item":"grid_item_2Vw8_","day":"day_1LZKD","day_default":"day_default_11Bxx day_1LZKD","day_current":"day_current_2WtPl day_1LZKD","day_next":"day_next_3nNQA day_1LZKD","day_previous":"day_previous_1SjK7 day_1LZKD","day_selected":"day_selected_JFwh2 day_1LZKD","day_current_selected":"day_current_selected_29P8j day_1LZKD day_selected_JFwh2 day_1LZKD day_current_2WtPl day_1LZKD"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1534856528941");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./components/Tabs/style.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"tabs":"tabs_HVEbs","tab":"tab_2Czae"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1534856528958");
-          });
-      }
-    }
-  
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/core-js/array/from.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -36817,11 +36715,11 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/calendar/style.css":
+/***/ "./pages/simple/AboutSection/style.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"application":"application_1qXzx","tabs":"tabs_2M3kt","events_list":"events_list_3c_pu","title":"title_3FAJT"};;
+module.exports = {"container":"container_1o9MI block_TewHb","content":"content_3K8If","box":"box_34Z49","heading":"heading_3qxcM heading_Avhal","subheading":"subheading_3vEO5 subheading_1csUY text_gradient_xePe_","description":"description_2rKcB","line":"line_3TWS2 line_2cMp3","preview":"preview_3aCcv","image":"image_14Jgu background_2h99B","gradient":"gradient_1Vm54 gradient_3mUKc"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -36843,7 +36741,381 @@ module.exports = {"application":"application_1qXzx","tabs":"tabs_2M3kt","events_
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1534856528935");
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757176");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/BeginningSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_CuUhd block_TewHb","content":"content_kBN1r","heading":"heading_2gwtD heading_Avhal","description":"description_3UBYZ","line":"line_IAO4D line_2cMp3","preview":"preview_19HuY","image":"image_1gd8Y background_2h99B","gradient":"gradient_1pIZ9 gradient_3mUKc"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757173");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/ClientsSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_dCOmX block_TewHb","content":"content_3uDRE","heading":"heading_3egM4 heading_Avhal","subheading":"subheading_3w1Vj subheading_1csUY text_gradient_xePe_","description":"description_gPqnd","line":"line_2LAj- line_2cMp3","preview":"preview_1dtHh","image":"image_1Hfl3 background_2h99B","gradient":"gradient_2JSnz gradient_3mUKc","box":"box_2IqPo"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757169");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/FrontendSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_2yJuz block_TewHb","content":"content_3RAy1","heading":"heading_1tTbj heading_Avhal","description":"description_27lWb","line":"line_3W2vR line_2cMp3","preview":"preview_1Gv2x","image":"image_3gDxa background_2h99B","gradient":"gradient_AMJpU gradient_3mUKc"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757161");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/IntroSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_25FAw background_2h99B","gradient":"gradient_3U2e7 gradient_top_35cxR","heading":"heading_28yNe heading_Avhal"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757179");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/Logo/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_1sx37"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757147");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/Navigation/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_2ilIH","item":"item_1U9HI","item_active":"item_active_2Dg1M item_1U9HI"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757145");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/PortfolioSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_26sUQ block_TewHb","heading":"heading_vfiwo heading_Avhal text_gradient_xePe_","items":"items_2xXeO","item":"item_1gln2","preview":"preview_6heja background_2h99B","gradient":"gradient_1r_53","content":"content_2OcB_","item_heading":"item_heading_3nll8"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757166");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/ServicesSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_32xyN block_TewHb","items":"items_2jEXC","item":"item_199_D","blur":"blur_1o_gK","content":"content_1o5Ui","item_heading":"item_heading_Wyolh subheading_1csUY","item_subheading":"item_subheading_1ppur"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757171");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/WebSection/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"container_ZDLOQ block_TewHb","content":"content_1wrYG","heading":"heading_30vVu heading_Avhal","description":"description_2NlNj","line":"line_1h7on line_2cMp3","preview":"preview_I9wNS","image":"image_1M3K8 background_2h99B","gradient":"gradient_1KYzu gradient_3mUKc"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757164");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/simple/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"application":"application_1CJaI root_QcNiS","container":"container_1u7TC","header":"header_1aqSN","logo":"logo_NRG34","menu_icon":"menu_icon_2q4iB","menu_icon_colored":"menu_icon_colored_Cx8o0 menu_icon_2q4iB","bar":"bar_1hAmo","bar_short":"bar_short_31SMe bar_1hAmo","bar_long":"bar_long_DilgH bar_1hAmo","navigation":"navigation_7UqfB","intro_section":"intro_section_2HlgG","about_section":"about_section_ag39x","beginning_section":"beginning_section_guulc","services_section":"services_section_1CfYa","gradient":"gradient_3CNeO","clients_section":"clients_section_jeabj","web_section":"web_section_uAqm4","frontend_section":"frontend_section_26M7A","portfolio_section":"portfolio_section_1T_7L"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513757159");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./pages/style.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"application":"application_2w-7Z","container":"container_37FNP","content":"content_3kBAR","separator":"separator_Y6LAk","title":"title_2QJ8l","description":"description_O8mfF","items":"items_geZBh","item":"item_2DZR7","item_image":"item_image_hY6-A","item_link":"item_link_dpW1G","item_link_hovered":"item_link_hovered_2-Z3I item_link_dpW1G","arrow":"arrow_3FPn8"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1571513759238");
           });
       }
     }

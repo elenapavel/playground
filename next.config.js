@@ -19,6 +19,7 @@ const routes = {
 	"/react-wireframe": { page: "/react-wireframe" },
 	"/structure": { page: "/structure" },
 	"/timer": { page: "/timer" },
+	"/gradient": { page: "/simple" },
 };
 
 const config = {

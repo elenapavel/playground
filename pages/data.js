@@ -3,6 +3,11 @@ import { STATIC, BASE } from "~/playground";
 export default {
 	nav: [
 		{
+			image: STATIC + "/screenshots/simple.png",
+			title: "Gradient",
+			link: `${BASE}/gradient`,
+		},
+		{
 			image: STATIC + "/screenshots/plants.png",
 			title: "Plants",
 			link: `${BASE}/plants`,
