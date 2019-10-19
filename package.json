@@ -14,7 +14,7 @@
 	"dependencies": {
 		"date-fns": "^1.29.0",
 		"react": "^16.3.1",
-		"react-dom": "^16.3.1",
+		"react-dom": "^16.4.2",
 		"react-gmaps": "^1.9.0",
 		"react-spring": "5.1.1",
 		"unistore": "^3.0.4"
