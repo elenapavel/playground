@@ -1,3 +1,4 @@
+import { STATIC } from "~/playground";
 import $ from "./style.css";
 
 export default ({ heading, items }) => (
@@ -7,7 +8,9 @@ export default ({ heading, items }) => (
 				<b className={$.item} key={key}>
 					<b
 						className={$.blur}
-						style={{ backgroundImage: `url(${item.icon.simple})` }}
+						style={{
+							backgroundImage: `url(${STATIC + item.icon})`,
+						}}
 					/>
 					<b className={$.content}>
 						<b className={$.item_heading}>{item.heading}</b>

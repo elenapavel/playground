@@ -1,3 +1,4 @@
+import { BASE, STATIC } from "~/playground";
 import $ from "./style.css";
 
 export default ({ heading, items }) => (
@@ -8,11 +9,15 @@ export default ({ heading, items }) => (
 				<b className={$.item} key={key}>
 					<b
 						className={$.preview}
-						style={{ backgroundImage: `url(${item.image.simple})` }}
+						style={{
+							backgroundImage: `url(${STATIC + item.image})`,
+						}}
 					/>
 					<b className={$.gradient} />
 					<b className={$.content}>
-						<b className={$.item_heading}>{item.heading}</b>
+						<a href={`${BASE + item.link}`}>
+							<b className={$.item_heading}>{item.heading}</b>
+						</a>
 					</b>
 				</b>
 			))}

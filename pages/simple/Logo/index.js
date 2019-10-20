@@ -1,7 +1,9 @@
 import $ from "./style.css";
 
-export default ({ image }) => (
+export default ({ image, link }) => (
 	<i className={$.container}>
-		<img src={image} />
+		<a href={link}>
+			<img src={image} />
+		</a>
 	</i>
 );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { STATIC } from "~/playground.js";
+import { BASE, STATIC } from "~/playground.js";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import IntroSection from "./IntroSection";
@@ -76,7 +76,7 @@ class Simple extends Component {
 							}rem)`,
 						}}
 					>
-						<Logo image={data.logo.simple} />
+						<Logo image={STATIC + data.logo} link={`${BASE}/`} />
 					</i>
 					<i
 						className={
@@ -105,8 +105,8 @@ class Simple extends Component {
 				>
 					<b className={$.intro_section} ref={data.introSection.ref}>
 						<IntroSection
-							image={data.introSection.simple.image}
-							heading={data.introSection.simple.heading}
+							image={STATIC + data.introSection.image}
+							heading={data.introSection.heading}
 						/>
 					</b>
 					<b
@@ -116,7 +116,7 @@ class Simple extends Component {
 						<BeginningSection
 							heading={data.beginningSection.heading}
 							description={data.beginningSection.description}
-							image={data.beginningSection.image.simple}
+							image={STATIC + data.beginningSection.image}
 						/>
 					</b>
 					<b className={$.about_section} ref={data.aboutSection.ref}>
@@ -124,7 +124,7 @@ class Simple extends Component {
 							heading={data.aboutSection.heading}
 							subheading={data.aboutSection.subheading}
 							description={data.aboutSection.description}
-							image={data.aboutSection.image.simple}
+							image={STATIC + data.aboutSection.image}
 						/>
 					</b>
 					<b
@@ -143,7 +143,7 @@ class Simple extends Component {
 					>
 						<ClientsSection
 							heading={data.clientsSection.heading}
-							image={data.clientsSection.image.simple}
+							image={STATIC + data.clientsSection.image}
 							description={data.clientsSection.description}
 						/>
 					</b>
@@ -159,7 +159,7 @@ class Simple extends Component {
 					<b className={$.web_section} ref={data.webSection.ref}>
 						<WebSection
 							heading={data.webSection.heading}
-							image={data.webSection.image.simple}
+							image={STATIC + data.webSection.image}
 							description={data.webSection.description}
 						/>
 					</b>
@@ -169,7 +169,7 @@ class Simple extends Component {
 					>
 						<FrontendSection
 							heading={data.frontendSection.heading}
-							image={data.frontendSection.image.simple}
+							image={STATIC + data.frontendSection.image}
 							description={data.frontendSection.description}
 						/>
 					</b>
