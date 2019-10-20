@@ -1,62 +1,48 @@
 {
-	"logo": {
-		"simple": "/playground/static/images/simple/logo/simple-logo.png"
-	},
+	"logo": "/images/simple/logo/logo.png",
 	"menu": [
 		{
 			"name": "Intro",
-			"image": "/playground/static/images/complex-intro-section.jpg",
 			"ref": "intro"
 		},
 		{
 			"name": "Beginning",
-			"image": "/playground/static/images/complex-beginning-section.jpeg",
 			"ref": "beginning"
 		},
 		{
 			"name": "About",
-			"image": "/playground/static/images/complex-about-section.jpeg",
 			"ref": "about"
 		},
 		{
 			"name": "Services",
-			"image": "/playground/static/images/complex-services-section.jpeg",
 			"ref": "services"
 		},
 		{
 			"name": "Clients",
-			"image": "/playground/static/images/complex-clients-section.jpeg",
 			"ref": "clients"
 		},
 		{
 			"name": "Demos",
-			"image": "",
 			"ref": "demos"
 		},
 		{
 			"name": "Web",
-			"image": "/playground/static/images/complex-web-section.jpeg",
 			"ref": "web"
 		},
 		{
 			"name": "Frontend",
-			"image": "/playground/static/images/complex-frontend-section.jpeg",
 			"ref": "frontend"
 		}
 	],
 	"introSection": {
 		"ref": "intro",
-		"simple": {
-			"heading": "Simple is underrated.",
-			"image": "/playground/static/images/simple/images/simple-intro-section.jpeg"
-		}
+		"heading": "Simple is underrated.",
+		"image": "/images/simple/intro-section.jpeg"
 	},
 	"beginningSection": {
 		"ref": "beginning",
 		"heading": "Let's start at the beginning.",
-		"image": {
-			"simple": "/playground/static/images/simple/images/simple-beginning-section.jpeg"
-		},
+		"image": "/images/simple/beginning-section.jpeg",
 		"description": "Every project is unique, but they all start with one thing in common. We want to know everything: where you started. Where you want to go next. What you value. Who your customers are and why they care about you. The only way to solve a problem is to understand it from every angle. Luckily, we’ve got a proven process to quench our insatiable curiosity."
 	},
 	"aboutSection": {
@@ -64,44 +50,33 @@
 		"heading": "We create things",
 		"subheading": "About us",
 		"description": "We've come to understand that websites are not just about pretty pictures, more traffic, better keywords and higher rankings on Google. Those things are important, sure, but more than anything else, websites need to produce when it comes to the bottom line.",
-		"image": {
-			"simple": "/playground/static/images/simple/images/simple-about-section.jpg"
-		}
+		"image": "/images/simple/about-section.jpg"
 	},
 	"servicesSection": {
 		"ref": "services",
 		"heading": "Services",
-		"image": "/playground/static/images/simple/images/complex-services-section.jpeg",
 		"items": [
 			{
 				"heading": "Web Development",
 				"subheading": "Utilising the latest technologies and trends we create websites better than your competitors.",
-				"icon": {
-					"simple": "/playground/static/images/simple/icons/simple-web-development-service.svg"
-				}
+				"icon": "/images/simple/icons/web-development-service.svg"
 			},
 			{
 				"heading": "Craft CMS",
 				"subheading": "Craft CMS is our main choice of content management system (CMS), that puts you in control of your content & layout, being a better alternative to WordPress.",
-				"icon": {
-					"simple": "/playground/static/images/simple/icons/simple-craft-service.png"
-				}
+				"icon": "/images/simple/icons/craft-service.png"
 			},
 			{
 				"heading": "WordPress CMS",
 				"subheading": "Currently, WordPress is one of the most popular Content Management Systems because it’s easy to set up and it has a user-friendly approach.",
-				"icon": {
-					"simple": "/playground/static/images/simple/icons/simple-wordpress-service.svg"
-				}
+				"icon": "/images/simple/icons/wordpress-service.svg"
 			}
 		]
 	},
 	"clientsSection": {
 		"ref": "clients",
 		"heading": "Clients",
-		"image": {
-			"simple": "/playground/static/images/simple/images/simple-clients-section.jpeg"
-		},
+		"image": "/images/simple/clients-section.jpeg",
 		"description": "No challenge too big. No detail too small. Big picture vision meets serious detail-sweating at every point of a project."
 	},
 	"portfolioSection": {
@@ -110,70 +85,52 @@
 		"image": "",
 		"items": [
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-plants.png"
-				},
+				"image": "/images/simple/demos/plants.png",
 				"heading": "Plants",
-				"link": ""
+				"link": "/plants"
 			},
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-architecture.png"
-				},
+				"image": "/images/simple/demos/architecture.png",
 				"heading": "Architecture",
-				"link": ""
+				"link": "/architecture"
 			},
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-calendar.png"
-				},
+				"image": "/images/simple/demos/calendar.png",
 				"heading": "Calendar",
-				"link": ""
+				"link": "/calendar"
 			},
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-books.png"
-				},
+				"image": "/images/simple/demos/books.png",
 				"heading": "Books",
-				"link": ""
+				"link": "/books"
 			},
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-structure.png"
-				},
+				"image": "/images/simple/demos/structure.png",
 				"heading": "Structure components examples",
-				"link": ""
+				"link": "/structure"
 			},
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-universe-facts.png"
-				},
+				"image": "/images/simple/demos/universe-facts.png",
 				"heading": "Universe facts",
-				"link": ""
+				"link": "/universe-facts"
 			},
 			{
-				"image": {
-					"simple": "/playground/static/images/simple/demos/simple-react-wireframe.png"
-				},
+				"image": "/images/simple/demos/react-wireframe.png",
 				"heading": "React Wireframe",
-				"link": ""
+				"link": "/react-wireframe"
 			}
 		]
 	},
 	"webSection": {
 		"ref": "web",
 		"heading": "Web development",
-		"image": {
-			"simple": "/playground/static/images/simple/images/simple-web-section.jpeg"
-		},
+		"image": "/images/simple/web-section.jpeg",
 		"description": "The endless possibilities of the web is something we adopt continuously. Through a rock-solid stack of technology we provide our clients with fast, scalable products, built for the digital future."
 	},
 	"frontendSection": {
 		"ref": "frontend",
 		"heading": "Frontend development",
-		"image": {
-			"simple": "/playground/static/images/simple/images/simple-frontend-section.jpeg"
-		},
+		"image": "/images/simple/frontend-section.jpeg",
 		"description": "Before launching a page you need to translate its design into web technologies. Basically, starting from an image, you have to develop specific source code, the language that web browsers use and frontend developers understand. No matter how good the design is, a poorly implemented code will cancel the initial advantages. We have the know-how needed to properly develop web projects."
 	},
 	"contactSection": {
